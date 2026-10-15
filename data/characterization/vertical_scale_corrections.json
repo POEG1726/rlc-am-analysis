@@ -1,0 +1,142 @@
+{
+  "reference_scale_V_div": {
+    "CH1": 0.2,
+    "CH2": 0.2
+  },
+  "correction_factors_to_reference": {
+    "CH1": {
+      "0.2": 1.0,
+      "0.1": 0.9996376990088495,
+      "0.05": 1.0019481694243138,
+      "0.02": 1.005601022657548,
+      "0.01": 1.005329205302219,
+      "0.005": 1.0053566133299143
+    },
+    "CH2": {
+      "0.2": 1.0,
+      "0.1": 0.99595761650726,
+      "0.05": 0.9959853532010409,
+      "0.02": 0.9938254426345368,
+      "0.01": 0.9923063747935468,
+      "0.005": 0.9687586982302431,
+      "0.002": 0.9214532952469437
+    }
+  },
+  "pair_measurements": {
+    "CH1": [
+      {
+        "amplitude_Vpp": 0.15,
+        "low_scale_V_div": 0.005,
+        "high_scale_V_div": 0.01,
+        "low_mean_Vpk": 0.009166421382415134,
+        "high_mean_Vpk": 0.0091666712841685,
+        "low_over_high_reading": 0.9999727380042743,
+        "correction_low_relative_to_high": 1.0000272627389624,
+        "relative_standard_error": 0.00021370403404668477
+      },
+      {
+        "amplitude_Vpp": 0.4,
+        "low_scale_V_div": 0.01,
+        "high_scale_V_div": 0.02,
+        "low_mean_Vpk": 0.024527792938864933,
+        "high_mean_Vpk": 0.024521162993530268,
+        "low_over_high_reading": 1.0002703764636456,
+        "correction_low_relative_to_high": 0.9997296966200265,
+        "relative_standard_error": 7.919641293316843e-05
+      },
+      {
+        "amplitude_Vpp": 0.75,
+        "low_scale_V_div": 0.02,
+        "high_scale_V_div": 0.05,
+        "low_mean_Vpk": 0.04610857787565493,
+        "high_mean_Vpk": 0.0462766782554078,
+        "low_over_high_reading": 0.9963674925234456,
+        "correction_low_relative_to_high": 1.003645750693205,
+        "relative_standard_error": 0.00022862805340659713
+      },
+      {
+        "amplitude_Vpp": 2.0,
+        "low_scale_V_div": 0.05,
+        "high_scale_V_div": 0.1,
+        "low_mean_Vpk": 0.12521982529940598,
+        "high_mean_Vpk": 0.1255092468589077,
+        "low_over_high_reading": 0.997694022020329,
+        "correction_low_relative_to_high": 1.0023113078045727,
+        "relative_standard_error": 0.00011003789556301003
+      },
+      {
+        "amplitude_Vpp": 5.0,
+        "low_scale_V_div": 0.1,
+        "high_scale_V_div": 0.2,
+        "low_mean_Vpk": 0.3261319092168935,
+        "high_mean_Vpk": 0.3260137513029384,
+        "low_over_high_reading": 1.0003624323007323,
+        "correction_low_relative_to_high": 0.9996376990088495,
+        "relative_standard_error": 9.679571604277008e-05
+      }
+    ],
+    "CH2": [
+      {
+        "amplitude_Vpp": 0.1,
+        "low_scale_V_div": 0.002,
+        "high_scale_V_div": 0.005,
+        "low_mean_Vpk": 0.004816464989199634,
+        "high_mean_Vpk": 0.004581272450866533,
+        "low_over_high_reading": 1.0513378195371494,
+        "correction_low_relative_to_high": 0.9511690547194898,
+        "relative_standard_error": 0.00016965077107218283
+      },
+      {
+        "amplitude_Vpp": 0.3,
+        "low_scale_V_div": 0.005,
+        "high_scale_V_div": 0.01,
+        "low_mean_Vpk": 0.013728313375445103,
+        "high_mean_Vpk": 0.0134025370916921,
+        "low_over_high_reading": 1.0243070607844051,
+        "correction_low_relative_to_high": 0.9762697518009971,
+        "relative_standard_error": 6.487982084323248e-05
+      },
+      {
+        "amplitude_Vpp": 0.6,
+        "low_scale_V_div": 0.01,
+        "high_scale_V_div": 0.02,
+        "low_mean_Vpk": 0.026728098350467234,
+        "high_mean_Vpk": 0.026687244300134833,
+        "low_over_high_reading": 1.0015308455932332,
+        "correction_low_relative_to_high": 0.998471494312962,
+        "relative_standard_error": 0.00010914526423391714
+      },
+      {
+        "amplitude_Vpp": 1.0,
+        "low_scale_V_div": 0.02,
+        "high_scale_V_div": 0.05,
+        "low_mean_Vpk": 0.04441703797944687,
+        "high_mean_Vpk": 0.04432071444481226,
+        "low_over_high_reading": 1.0021733299167492,
+        "correction_low_relative_to_high": 0.9978313832030137,
+        "relative_standard_error": 0.00012830216659581975
+      },
+      {
+        "amplitude_Vpp": 3.0,
+        "low_scale_V_div": 0.05,
+        "high_scale_V_div": 0.1,
+        "low_mean_Vpk": 0.13216480979736175,
+        "high_mean_Vpk": 0.13216849049099488,
+        "low_over_high_reading": 0.9999721515043453,
+        "correction_low_relative_to_high": 1.0000278492712151,
+        "relative_standard_error": 6.331892532729092e-05
+      },
+      {
+        "amplitude_Vpp": 5.0,
+        "low_scale_V_div": 0.1,
+        "high_scale_V_div": 0.2,
+        "low_mean_Vpk": 0.22275381993604007,
+        "high_mean_Vpk": 0.22185336357138585,
+        "low_over_high_reading": 1.0040587906811902,
+        "correction_low_relative_to_high": 0.99595761650726,
+        "relative_standard_error": 4.172245755042587e-05
+      }
+    ]
+  },
+  "method": "For each adjacent scale pair, hold the same generator amplitude and frequency, change only the tested channel scale, discard one post-change capture, and use the ratio of mean measured amplitudes (three repeats each) to map readings to the 200 mV/div reference range. This corrects relative range gain, not absolute oscilloscope calibration."
+}

@@ -1,0 +1,1147 @@
+table,column,kind,unit,description
+data/am_extended/formal_am_end_checks.csv,sweep_number,provenance,1,独立sweep编号
+data/am_extended/formal_am_end_checks.csv,initial_timestamp_start_elapsed_s,provenance,s,同一CSV最早时间为零点的相对秒数；各CSV零点独立
+data/am_extended/formal_am_end_checks.csv,endcheck_timestamp_start_elapsed_s,provenance,s,同一CSV最早时间为零点的相对秒数；各CSV零点独立
+data/am_extended/formal_am_end_checks.csv,initial_waveform_id,provenance,text,本地未发布波形的逻辑编号；无文件夹路径
+data/am_extended/formal_am_end_checks.csv,endcheck_waveform_id,provenance,text,本地未发布波形的逻辑编号；无文件夹路径
+data/am_extended/formal_am_end_checks.csv,initial_T_lower,derived,1,端点检查的初始/末尾归一化边带传输
+data/am_extended/formal_am_end_checks.csv,endcheck_T_lower,derived,1,端点检查的初始/末尾归一化边带传输
+data/am_extended/formal_am_end_checks.csv,T_lower_drift,derived,1,末值-初值
+data/am_extended/formal_am_end_checks.csv,T_lower_drift_percent,derived,%,100×(末值-初值)/初值
+data/am_extended/formal_am_end_checks.csv,initial_T_upper,derived,1,端点检查的初始/末尾归一化边带传输
+data/am_extended/formal_am_end_checks.csv,endcheck_T_upper,derived,1,端点检查的初始/末尾归一化边带传输
+data/am_extended/formal_am_end_checks.csv,T_upper_drift,derived,1,末值-初值
+data/am_extended/formal_am_end_checks.csv,T_upper_drift_percent,derived,%,100×(末值-初值)/初值
+data/am_extended/formal_am_end_checks.csv,initial_T_mean,statistic,same as base field,相应分组的算术平均值
+data/am_extended/formal_am_end_checks.csv,endcheck_T_mean,statistic,same as base field,相应分组的算术平均值
+data/am_extended/formal_am_end_checks.csv,T_mean_drift,derived,1,末值-初值
+data/am_extended/formal_am_end_checks.csv,T_mean_drift_percent,derived,%,100×(末值-初值)/初值
+data/am_extended/formal_am_raw.csv,sweep_number,provenance,1,独立sweep编号
+data/am_extended/formal_am_raw.csv,fm_Hz,setting,Hz,调制频率
+data/am_extended/formal_am_raw.csv,acquisition_type,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/am_extended/formal_am_raw.csv,timestamp_start_elapsed_s,provenance,s,同一CSV最早时间为零点的相对秒数；各CSV零点独立
+data/am_extended/formal_am_raw.csv,timestamp_end_elapsed_s,provenance,s,同一CSV最早时间为零点的相对秒数；各CSV零点独立
+data/am_extended/formal_am_raw.csv,waveform_id,provenance,text,本地未发布波形的逻辑编号；无文件夹路径
+data/am_extended/formal_am_raw.csv,programmed_carrier_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/am_extended/formal_am_raw.csv,programmed_amplitude_Vpp,setting_or_readback,V peak-to-peak,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/am_extended/formal_am_raw.csv,AM_depth_percent,legacy_auxiliary,%,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/am_extended/formal_am_raw.csv,record_points,setting_or_readback,unspecified,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/am_extended/formal_am_raw.csv,sample_rate_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/am_extended/formal_am_raw.csv,record_duration_s,legacy_auxiliary,s,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/am_extended/formal_am_raw.csv,fft_bin_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/am_extended/formal_am_raw.csv,CH1_vertical_scale_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_vertical_scale_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,H_L,derived,1,下边带CH2/CH1幅度比
+data/am_extended/formal_am_raw.csv,H_C,derived,1,载波CH2/CH1幅度比
+data/am_extended/formal_am_raw.csv,H_U,derived,1,上边带CH2/CH1幅度比
+data/am_extended/formal_am_raw.csv,T_lower,derived,1,H_L/H_C
+data/am_extended/formal_am_raw.csv,T_upper,derived,1,H_U/H_C
+data/am_extended/formal_am_raw.csv,T_mean,derived,1,(T_lower+T_upper)/2
+data/am_extended/formal_am_raw.csv,CH1_ADC_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH1_ADC_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_ADC_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_ADC_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH1_clipped,quality,boolean,ADC削顶检查标志
+data/am_extended/formal_am_raw.csv,CH2_clipped,quality,boolean,ADC削顶检查标志
+data/am_extended/formal_am_raw.csv,CH1_code_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_code_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH1_wave_min_V,instrument_or_extracted_feature,V,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH1_wave_max_V,instrument_or_extracted_feature,V,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_wave_min_V,instrument_or_extracted_feature,V,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_wave_max_V,instrument_or_extracted_feature,V,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,LSB_same_bin_CH1_CH2,quality,boolean,两通道相应频谱线峰值FFT bin一致性
+data/am_extended/formal_am_raw.csv,carrier_same_bin_CH1_CH2,quality,boolean,两通道相应频谱线峰值FFT bin一致性
+data/am_extended/formal_am_raw.csv,USB_same_bin_CH1_CH2,quality,boolean,两通道相应频谱线峰值FFT bin一致性
+data/am_extended/formal_am_raw.csv,CH1_LSB_frequency_Hz,instrument_or_extracted_feature,Hz,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH1_LSB_amplitude_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH1_LSB_bin_index,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH1_LSB_noise_floor_Vpk_per_bin,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH1_LSB_snr_dB,extracted_feature,dB,局部FFT单bin峰值相对噪声底的估计
+data/am_extended/formal_am_raw.csv,CH1_LSB_noise_bins_used,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH1_LSB_spur_bins_excluded,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH1_carrier_frequency_Hz,instrument_or_extracted_feature,Hz,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH1_carrier_amplitude_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH1_carrier_bin_index,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH1_carrier_noise_floor_Vpk_per_bin,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH1_carrier_snr_dB,extracted_feature,dB,局部FFT单bin峰值相对噪声底的估计
+data/am_extended/formal_am_raw.csv,CH1_carrier_noise_bins_used,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH1_carrier_spur_bins_excluded,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH1_USB_frequency_Hz,instrument_or_extracted_feature,Hz,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH1_USB_amplitude_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH1_USB_bin_index,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH1_USB_noise_floor_Vpk_per_bin,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH1_USB_snr_dB,extracted_feature,dB,局部FFT单bin峰值相对噪声底的估计
+data/am_extended/formal_am_raw.csv,CH1_USB_noise_bins_used,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH1_USB_spur_bins_excluded,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_LSB_frequency_Hz,instrument_or_extracted_feature,Hz,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_LSB_amplitude_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_LSB_bin_index,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_LSB_noise_floor_Vpk_per_bin,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_LSB_snr_dB,extracted_feature,dB,局部FFT单bin峰值相对噪声底的估计
+data/am_extended/formal_am_raw.csv,CH2_LSB_noise_bins_used,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_LSB_spur_bins_excluded,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_carrier_frequency_Hz,instrument_or_extracted_feature,Hz,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_carrier_amplitude_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_carrier_bin_index,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_carrier_noise_floor_Vpk_per_bin,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_carrier_snr_dB,extracted_feature,dB,局部FFT单bin峰值相对噪声底的估计
+data/am_extended/formal_am_raw.csv,CH2_carrier_noise_bins_used,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_carrier_spur_bins_excluded,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_USB_frequency_Hz,instrument_or_extracted_feature,Hz,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_USB_amplitude_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_USB_bin_index,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_USB_noise_floor_Vpk_per_bin,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_USB_snr_dB,extracted_feature,dB,局部FFT单bin峰值相对噪声底的估计
+data/am_extended/formal_am_raw.csv,CH2_USB_noise_bins_used,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_raw.csv,CH2_USB_spur_bins_excluded,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_extended/formal_am_summary.csv,fm_Hz,setting,Hz,调制频率
+data/am_extended/formal_am_summary.csv,n_sweeps,statistic,1,该频率参与汇总的sweep数
+data/am_extended/formal_am_summary.csv,T_lower_mean,statistic,same as base field,相应分组的算术平均值
+data/am_extended/formal_am_summary.csv,T_lower_sample_SD,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/am_extended/formal_am_summary.csv,T_lower_relative_SD_percent,statistic,%,100×样本标准差/绝对均值
+data/am_extended/formal_am_summary.csv,T_upper_mean,statistic,same as base field,相应分组的算术平均值
+data/am_extended/formal_am_summary.csv,T_upper_sample_SD,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/am_extended/formal_am_summary.csv,T_upper_relative_SD_percent,statistic,%,100×样本标准差/绝对均值
+data/am_extended/formal_am_summary.csv,T_mean_mean,statistic,same as base field,相应分组的算术平均值
+data/am_extended/formal_am_summary.csv,T_mean_sample_SD,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/am_extended/formal_am_summary.csv,T_mean_relative_SD_percent,statistic,%,100×样本标准差/绝对均值
+data/am_extended/formal_am_summary.csv,H_L_mean,statistic,same as base field,相应分组的算术平均值
+data/am_extended/formal_am_summary.csv,H_L_sample_SD,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/am_extended/formal_am_summary.csv,H_C_mean,statistic,same as base field,相应分组的算术平均值
+data/am_extended/formal_am_summary.csv,H_C_sample_SD,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/am_extended/formal_am_summary.csv,H_U_mean,statistic,same as base field,相应分组的算术平均值
+data/am_extended/formal_am_summary.csv,H_U_sample_SD,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/am_extended/formal_am_summary.csv,CH1_LSB_snr_dB_min,extracted_feature,unspecified,局部FFT单bin峰值相对噪声底的估计
+data/am_extended/formal_am_summary.csv,CH1_LSB_snr_dB_mean,statistic,same as base field,相应分组的算术平均值
+data/am_extended/formal_am_summary.csv,CH1_USB_snr_dB_min,extracted_feature,unspecified,局部FFT单bin峰值相对噪声底的估计
+data/am_extended/formal_am_summary.csv,CH1_USB_snr_dB_mean,statistic,same as base field,相应分组的算术平均值
+data/am_extended/formal_am_summary.csv,CH2_LSB_snr_dB_min,extracted_feature,unspecified,局部FFT单bin峰值相对噪声底的估计
+data/am_extended/formal_am_summary.csv,CH2_LSB_snr_dB_mean,statistic,same as base field,相应分组的算术平均值
+data/am_extended/formal_am_summary.csv,CH2_USB_snr_dB_min,extracted_feature,unspecified,局部FFT单bin峰值相对噪声底的估计
+data/am_extended/formal_am_summary.csv,CH2_USB_snr_dB_mean,statistic,same as base field,相应分组的算术平均值
+data/am_initial/formal_am_end_checks.csv,sweep_number,provenance,1,独立sweep编号
+data/am_initial/formal_am_end_checks.csv,initial_timestamp_start_elapsed_s,provenance,s,同一CSV最早时间为零点的相对秒数；各CSV零点独立
+data/am_initial/formal_am_end_checks.csv,endcheck_timestamp_start_elapsed_s,provenance,s,同一CSV最早时间为零点的相对秒数；各CSV零点独立
+data/am_initial/formal_am_end_checks.csv,initial_waveform_id,provenance,text,本地未发布波形的逻辑编号；无文件夹路径
+data/am_initial/formal_am_end_checks.csv,endcheck_waveform_id,provenance,text,本地未发布波形的逻辑编号；无文件夹路径
+data/am_initial/formal_am_end_checks.csv,initial_T_lower,derived,1,端点检查的初始/末尾归一化边带传输
+data/am_initial/formal_am_end_checks.csv,endcheck_T_lower,derived,1,端点检查的初始/末尾归一化边带传输
+data/am_initial/formal_am_end_checks.csv,T_lower_drift,derived,1,末值-初值
+data/am_initial/formal_am_end_checks.csv,T_lower_drift_percent,derived,%,100×(末值-初值)/初值
+data/am_initial/formal_am_end_checks.csv,initial_T_upper,derived,1,端点检查的初始/末尾归一化边带传输
+data/am_initial/formal_am_end_checks.csv,endcheck_T_upper,derived,1,端点检查的初始/末尾归一化边带传输
+data/am_initial/formal_am_end_checks.csv,T_upper_drift,derived,1,末值-初值
+data/am_initial/formal_am_end_checks.csv,T_upper_drift_percent,derived,%,100×(末值-初值)/初值
+data/am_initial/formal_am_end_checks.csv,initial_T_mean,statistic,same as base field,相应分组的算术平均值
+data/am_initial/formal_am_end_checks.csv,endcheck_T_mean,statistic,same as base field,相应分组的算术平均值
+data/am_initial/formal_am_end_checks.csv,T_mean_drift,derived,1,末值-初值
+data/am_initial/formal_am_end_checks.csv,T_mean_drift_percent,derived,%,100×(末值-初值)/初值
+data/am_initial/formal_am_raw.csv,sweep_number,provenance,1,独立sweep编号
+data/am_initial/formal_am_raw.csv,fm_Hz,setting,Hz,调制频率
+data/am_initial/formal_am_raw.csv,acquisition_type,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/am_initial/formal_am_raw.csv,timestamp_start_elapsed_s,provenance,s,同一CSV最早时间为零点的相对秒数；各CSV零点独立
+data/am_initial/formal_am_raw.csv,timestamp_end_elapsed_s,provenance,s,同一CSV最早时间为零点的相对秒数；各CSV零点独立
+data/am_initial/formal_am_raw.csv,waveform_id,provenance,text,本地未发布波形的逻辑编号；无文件夹路径
+data/am_initial/formal_am_raw.csv,programmed_carrier_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/am_initial/formal_am_raw.csv,programmed_amplitude_Vpp,setting_or_readback,V peak-to-peak,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/am_initial/formal_am_raw.csv,AM_depth_percent,legacy_auxiliary,%,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/am_initial/formal_am_raw.csv,record_points,setting_or_readback,unspecified,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/am_initial/formal_am_raw.csv,sample_rate_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/am_initial/formal_am_raw.csv,record_duration_s,legacy_auxiliary,s,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/am_initial/formal_am_raw.csv,fft_bin_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/am_initial/formal_am_raw.csv,CH1_vertical_scale_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_vertical_scale_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,H_L,derived,1,下边带CH2/CH1幅度比
+data/am_initial/formal_am_raw.csv,H_C,derived,1,载波CH2/CH1幅度比
+data/am_initial/formal_am_raw.csv,H_U,derived,1,上边带CH2/CH1幅度比
+data/am_initial/formal_am_raw.csv,T_lower,derived,1,H_L/H_C
+data/am_initial/formal_am_raw.csv,T_upper,derived,1,H_U/H_C
+data/am_initial/formal_am_raw.csv,T_mean,derived,1,(T_lower+T_upper)/2
+data/am_initial/formal_am_raw.csv,CH1_ADC_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH1_ADC_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_ADC_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_ADC_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH1_clipped,quality,boolean,ADC削顶检查标志
+data/am_initial/formal_am_raw.csv,CH2_clipped,quality,boolean,ADC削顶检查标志
+data/am_initial/formal_am_raw.csv,CH1_code_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_code_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH1_wave_min_V,instrument_or_extracted_feature,V,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH1_wave_max_V,instrument_or_extracted_feature,V,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_wave_min_V,instrument_or_extracted_feature,V,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_wave_max_V,instrument_or_extracted_feature,V,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,LSB_same_bin_CH1_CH2,quality,boolean,两通道相应频谱线峰值FFT bin一致性
+data/am_initial/formal_am_raw.csv,carrier_same_bin_CH1_CH2,quality,boolean,两通道相应频谱线峰值FFT bin一致性
+data/am_initial/formal_am_raw.csv,USB_same_bin_CH1_CH2,quality,boolean,两通道相应频谱线峰值FFT bin一致性
+data/am_initial/formal_am_raw.csv,CH1_LSB_frequency_Hz,instrument_or_extracted_feature,Hz,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH1_LSB_amplitude_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH1_LSB_bin_index,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH1_LSB_noise_floor_Vpk_per_bin,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH1_LSB_snr_dB,extracted_feature,dB,局部FFT单bin峰值相对噪声底的估计
+data/am_initial/formal_am_raw.csv,CH1_LSB_noise_bins_used,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH1_LSB_spur_bins_excluded,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH1_carrier_frequency_Hz,instrument_or_extracted_feature,Hz,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH1_carrier_amplitude_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH1_carrier_bin_index,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH1_carrier_noise_floor_Vpk_per_bin,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH1_carrier_snr_dB,extracted_feature,dB,局部FFT单bin峰值相对噪声底的估计
+data/am_initial/formal_am_raw.csv,CH1_carrier_noise_bins_used,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH1_carrier_spur_bins_excluded,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH1_USB_frequency_Hz,instrument_or_extracted_feature,Hz,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH1_USB_amplitude_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH1_USB_bin_index,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH1_USB_noise_floor_Vpk_per_bin,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH1_USB_snr_dB,extracted_feature,dB,局部FFT单bin峰值相对噪声底的估计
+data/am_initial/formal_am_raw.csv,CH1_USB_noise_bins_used,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH1_USB_spur_bins_excluded,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_LSB_frequency_Hz,instrument_or_extracted_feature,Hz,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_LSB_amplitude_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_LSB_bin_index,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_LSB_noise_floor_Vpk_per_bin,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_LSB_snr_dB,extracted_feature,dB,局部FFT单bin峰值相对噪声底的估计
+data/am_initial/formal_am_raw.csv,CH2_LSB_noise_bins_used,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_LSB_spur_bins_excluded,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_carrier_frequency_Hz,instrument_or_extracted_feature,Hz,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_carrier_amplitude_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_carrier_bin_index,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_carrier_noise_floor_Vpk_per_bin,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_carrier_snr_dB,extracted_feature,dB,局部FFT单bin峰值相对噪声底的估计
+data/am_initial/formal_am_raw.csv,CH2_carrier_noise_bins_used,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_carrier_spur_bins_excluded,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_USB_frequency_Hz,instrument_or_extracted_feature,Hz,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_USB_amplitude_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_USB_bin_index,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_USB_noise_floor_Vpk_per_bin,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_USB_snr_dB,extracted_feature,dB,局部FFT单bin峰值相对噪声底的估计
+data/am_initial/formal_am_raw.csv,CH2_USB_noise_bins_used,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_raw.csv,CH2_USB_spur_bins_excluded,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/am_initial/formal_am_summary.csv,fm_Hz,setting,Hz,调制频率
+data/am_initial/formal_am_summary.csv,n_sweeps,statistic,1,该频率参与汇总的sweep数
+data/am_initial/formal_am_summary.csv,T_lower_mean,statistic,same as base field,相应分组的算术平均值
+data/am_initial/formal_am_summary.csv,T_lower_sample_SD,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/am_initial/formal_am_summary.csv,T_lower_relative_SD_percent,statistic,%,100×样本标准差/绝对均值
+data/am_initial/formal_am_summary.csv,T_upper_mean,statistic,same as base field,相应分组的算术平均值
+data/am_initial/formal_am_summary.csv,T_upper_sample_SD,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/am_initial/formal_am_summary.csv,T_upper_relative_SD_percent,statistic,%,100×样本标准差/绝对均值
+data/am_initial/formal_am_summary.csv,T_mean_mean,statistic,same as base field,相应分组的算术平均值
+data/am_initial/formal_am_summary.csv,T_mean_sample_SD,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/am_initial/formal_am_summary.csv,T_mean_relative_SD_percent,statistic,%,100×样本标准差/绝对均值
+data/am_initial/formal_am_summary.csv,H_L_mean,statistic,same as base field,相应分组的算术平均值
+data/am_initial/formal_am_summary.csv,H_L_sample_SD,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/am_initial/formal_am_summary.csv,H_C_mean,statistic,same as base field,相应分组的算术平均值
+data/am_initial/formal_am_summary.csv,H_C_sample_SD,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/am_initial/formal_am_summary.csv,H_U_mean,statistic,same as base field,相应分组的算术平均值
+data/am_initial/formal_am_summary.csv,H_U_sample_SD,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/am_initial/formal_am_summary.csv,CH1_LSB_snr_dB_min,extracted_feature,unspecified,局部FFT单bin峰值相对噪声底的估计
+data/am_initial/formal_am_summary.csv,CH1_LSB_snr_dB_mean,statistic,same as base field,相应分组的算术平均值
+data/am_initial/formal_am_summary.csv,CH1_USB_snr_dB_min,extracted_feature,unspecified,局部FFT单bin峰值相对噪声底的估计
+data/am_initial/formal_am_summary.csv,CH1_USB_snr_dB_mean,statistic,same as base field,相应分组的算术平均值
+data/am_initial/formal_am_summary.csv,CH2_LSB_snr_dB_min,extracted_feature,unspecified,局部FFT单bin峰值相对噪声底的估计
+data/am_initial/formal_am_summary.csv,CH2_LSB_snr_dB_mean,statistic,same as base field,相应分组的算术平均值
+data/am_initial/formal_am_summary.csv,CH2_USB_snr_dB_min,extracted_feature,unspecified,局部FFT单bin峰值相对噪声底的估计
+data/am_initial/formal_am_summary.csv,CH2_USB_snr_dB_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/am_1khz_diagnostic.csv,component,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_diagnostic.csv,target_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_diagnostic.csv,Vin_fft_Vpk,legacy_auxiliary,V peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_diagnostic.csv,Vin_fft_peak_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_diagnostic.csv,Vout_fft_Vpk,legacy_auxiliary,V peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_diagnostic.csv,Vout_fft_peak_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_diagnostic.csv,H_fft,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/am_1khz_diagnostic.csv,in_bin,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_diagnostic.csv,out_bin,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_diagnostic_500khz.csv,component,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_diagnostic_500khz.csv,target_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_diagnostic_500khz.csv,Vin_fft_Vpk,legacy_auxiliary,V peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_diagnostic_500khz.csv,Vin_fft_peak_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_diagnostic_500khz.csv,Vout_fft_Vpk,legacy_auxiliary,V peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_diagnostic_500khz.csv,Vout_fft_peak_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_diagnostic_500khz.csv,H_fft,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/am_1khz_diagnostic_500khz.csv,in_bin,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_diagnostic_500khz.csv,out_bin,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_low_drive.csv,component,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_low_drive.csv,target_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_low_drive.csv,Vin_fft_Vpk_raw,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_low_drive.csv,Vin_fft_Vpk_corrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_low_drive.csv,Vin_fft_peak_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_low_drive.csv,Vout_fft_Vpk_raw,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_low_drive.csv,Vout_fft_Vpk_corrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_low_drive.csv,Vout_fft_peak_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_low_drive.csv,H_raw,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/am_1khz_low_drive.csv,H_range_corrected,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/am_1khz_low_drive.csv,in_bin,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_low_drive.csv,out_bin,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_low_drive.csv,same_bin_H_raw,quality,boolean,两通道相应频谱线峰值FFT bin一致性
+data/characterization/am_1khz_low_drive.csv,amplitude_programmed_Vpp,setting,Vpp,发生器设定峰峰值；不等同于CH1实测Vin
+data/characterization/am_1khz_low_drive.csv,carrier_programmed_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/am_1khz_low_drive.csv,modulation_frequency_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_low_drive.csv,modulation_depth_percent,legacy_auxiliary,%,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_low_drive.csv,record_points,setting_or_readback,unspecified,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/am_1khz_low_drive.csv,sample_rate_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/am_1khz_low_drive.csv,fft_bin_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_low_drive_summary.csv,carrier_programmed_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/am_1khz_low_drive_summary.csv,modulation_frequency_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_low_drive_summary.csv,depth_percent,legacy_auxiliary,%,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_low_drive_summary.csv,amplitude_programmed_Vpp,setting,Vpp,发生器设定峰峰值；不等同于CH1实测Vin
+data/characterization/am_1khz_low_drive_summary.csv,T_lower,derived,1,H_L/H_C
+data/characterization/am_1khz_low_drive_summary.csv,T_upper,derived,1,H_U/H_C
+data/characterization/am_1khz_low_drive_summary.csv,T_mean,derived,1,(T_lower+T_upper)/2
+data/characterization/am_1khz_low_drive_summary.csv,CH1_scale_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/am_1khz_low_drive_summary.csv,CH2_scale_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/am_1khz_low_drive_summary.csv,CH1_range_factor,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/am_1khz_low_drive_summary.csv,CH2_range_factor,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/am_1khz_low_drive_summary.csv,points,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_low_drive_summary.csv,sample_rate_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/am_1khz_low_drive_summary.csv,duration_s,legacy_auxiliary,s,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_low_drive_summary.csv,FFT_bin_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_low_drive_summary.csv,Vin_raw_min_V,legacy_auxiliary,V,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_low_drive_summary.csv,Vin_raw_max_V,legacy_auxiliary,V,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_low_drive_summary.csv,Vout_raw_min_V,legacy_auxiliary,V,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/am_1khz_low_drive_summary.csv,Vout_raw_max_V,legacy_auxiliary,V,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/amplitude_comparison.csv,label,provenance,text,扫描阶段标签；频响绘图应依原脚本筛选
+data/characterization/amplitude_comparison.csv,frequency_set_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/amplitude_comparison.csv,frequency_measured_Hz,extracted_feature,Hz,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/amplitude_comparison.csv,sample_rate_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/amplitude_comparison.csv,dt_s,legacy_auxiliary,s,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/amplitude_comparison.csv,n_points,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/amplitude_comparison.csv,record_duration_s,legacy_auxiliary,s,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/amplitude_comparison.csv,vin_Vpk,extracted_feature,V peak,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/amplitude_comparison.csv,vout_Vpk,extracted_feature,V peak,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/amplitude_comparison.csv,H_real,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/amplitude_comparison.csv,H_imag,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/amplitude_comparison.csv,H_mag,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/amplitude_comparison.csv,H_phase_deg,extracted_feature,degree,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/amplitude_comparison.csv,Z_real_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/amplitude_comparison.csv,Z_imag_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/amplitude_comparison.csv,Z_mag_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/amplitude_comparison.csv,THD_residual_CH1_Vrms,legacy_auxiliary,V RMS,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/amplitude_comparison.csv,THD_residual_CH2_Vrms,legacy_auxiliary,V RMS,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/amplitude_comparison.csv,vin_dc_V,extracted_feature,V,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/amplitude_comparison.csv,vout_dc_V,extracted_feature,V,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/amplitude_comparison.csv,CH1_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/amplitude_comparison.csv,CH2_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/amplitude_comparison.csv,CH1_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/amplitude_comparison.csv,CH1_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/amplitude_comparison.csv,CH2_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/amplitude_comparison.csv,CH2_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/amplitude_linearity_check.csv,label,provenance,text,扫描阶段标签；频响绘图应依原脚本筛选
+data/characterization/amplitude_linearity_check.csv,frequency_set_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/amplitude_linearity_check.csv,frequency_measured_Hz,extracted_feature,Hz,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/amplitude_linearity_check.csv,sample_rate_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/amplitude_linearity_check.csv,dt_s,legacy_auxiliary,s,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/amplitude_linearity_check.csv,n_points,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/amplitude_linearity_check.csv,record_duration_s,legacy_auxiliary,s,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/amplitude_linearity_check.csv,vin_Vpk,extracted_feature,V peak,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/amplitude_linearity_check.csv,vout_Vpk,extracted_feature,V peak,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/amplitude_linearity_check.csv,H_real,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/amplitude_linearity_check.csv,H_imag,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/amplitude_linearity_check.csv,H_mag,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/amplitude_linearity_check.csv,H_phase_deg,extracted_feature,degree,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/amplitude_linearity_check.csv,Z_real_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/amplitude_linearity_check.csv,Z_imag_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/amplitude_linearity_check.csv,Z_mag_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/amplitude_linearity_check.csv,THD_residual_CH1_Vrms,legacy_auxiliary,V RMS,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/amplitude_linearity_check.csv,THD_residual_CH2_Vrms,legacy_auxiliary,V RMS,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/amplitude_linearity_check.csv,vin_dc_V,extracted_feature,V,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/amplitude_linearity_check.csv,vout_dc_V,extracted_feature,V,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/amplitude_linearity_check.csv,CH1_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/amplitude_linearity_check.csv,CH2_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/amplitude_linearity_check.csv,CH1_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/amplitude_linearity_check.csv,CH1_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/amplitude_linearity_check.csv,CH2_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/amplitude_linearity_check.csv,CH2_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_frequency_scan.csv,label,provenance,text,扫描阶段标签；频响绘图应依原脚本筛选
+data/characterization/drive_amplitude_frequency_scan.csv,frequency_set_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/drive_amplitude_frequency_scan.csv,frequency_measured_Hz,extracted_feature,Hz,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/drive_amplitude_frequency_scan.csv,sample_rate_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/drive_amplitude_frequency_scan.csv,dt_s,legacy_auxiliary,s,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_frequency_scan.csv,n_points,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_frequency_scan.csv,record_duration_s,legacy_auxiliary,s,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_frequency_scan.csv,vin_Vpk,extracted_feature,V peak,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/drive_amplitude_frequency_scan.csv,vout_Vpk,extracted_feature,V peak,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/drive_amplitude_frequency_scan.csv,H_real,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/drive_amplitude_frequency_scan.csv,H_imag,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/drive_amplitude_frequency_scan.csv,H_mag,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/drive_amplitude_frequency_scan.csv,H_phase_deg,extracted_feature,degree,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/drive_amplitude_frequency_scan.csv,Z_real_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/drive_amplitude_frequency_scan.csv,Z_imag_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/drive_amplitude_frequency_scan.csv,Z_mag_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/drive_amplitude_frequency_scan.csv,THD_residual_CH1_Vrms,legacy_auxiliary,V RMS,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_frequency_scan.csv,THD_residual_CH2_Vrms,legacy_auxiliary,V RMS,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_frequency_scan.csv,vin_dc_V,extracted_feature,V,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/drive_amplitude_frequency_scan.csv,vout_dc_V,extracted_feature,V,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/drive_amplitude_frequency_scan.csv,CH1_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_frequency_scan.csv,CH2_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_frequency_scan.csv,CH1_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_frequency_scan.csv,CH1_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_frequency_scan.csv,CH2_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_frequency_scan.csv,CH2_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_frequency_scan.csv,amplitude_programmed_Vpp,setting,Vpp,发生器设定峰峰值；不等同于CH1实测Vin
+data/characterization/drive_amplitude_frequency_scan.csv,direction,provenance,text,升降扫描方向或重复标签
+data/characterization/drive_amplitude_frequency_scan.csv,sweep_order,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_frequency_scan.csv,CH1_scale_correction_factor,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_frequency_scan.csv,CH2_scale_correction_factor,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_frequency_scan.csv,Vin_corrected_Vpk,legacy_auxiliary,V peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_frequency_scan.csv,Vout_corrected_Vpk,legacy_auxiliary,V peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_frequency_scan.csv,H_real_corrected,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/drive_amplitude_frequency_scan.csv,H_imag_corrected,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/drive_amplitude_frequency_scan.csv,H_mag_corrected,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/drive_amplitude_harmonics.csv,harmonic_fundamental_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_harmonics.csv,frequency_resolution_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_harmonics.csv,CH1_fundamental_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_harmonics.csv,CH1_H2_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_harmonics.csv,CH1_H3_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_harmonics.csv,CH1_H2_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_harmonics.csv,CH1_H3_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_harmonics.csv,CH2_fundamental_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_harmonics.csv,CH2_H2_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_harmonics.csv,CH2_H3_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_harmonics.csv,CH2_H2_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_harmonics.csv,CH2_H3_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_harmonics.csv,CH1_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_harmonics.csv,CH2_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_harmonics.csv,CH1_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_harmonics.csv,CH1_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_harmonics.csv,CH2_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_harmonics.csv,CH2_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_harmonics.csv,amplitude_programmed_Vpp,setting,Vpp,发生器设定峰峰值；不等同于CH1实测Vin
+data/characterization/drive_amplitude_harmonics.csv,direction,provenance,text,升降扫描方向或重复标签
+data/characterization/drive_amplitude_harmonics.csv,sweep_order,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_harmonics.csv,Vin_resonance_Vpk,legacy_auxiliary,V peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_harmonics.csv,Vout_resonance_Vpk,legacy_auxiliary,V peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_harmonics.csv,I_resonance_pk_A,derived,A,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/drive_amplitude_harmonics.csv,CH1_scale_correction_factor,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_harmonics.csv,CH2_scale_correction_factor,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_harmonics.csv,CH1_fundamental_Vpk_corrected,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_harmonics.csv,CH1_H2_Vpk_corrected,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_harmonics.csv,CH1_H3_Vpk_corrected,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_harmonics.csv,CH2_fundamental_Vpk_corrected,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_harmonics.csv,CH2_H2_Vpk_corrected,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_harmonics.csv,CH2_H3_Vpk_corrected,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_sweep.csv,amplitude_programmed_Vpp,setting,Vpp,发生器设定峰峰值；不等同于CH1实测Vin
+data/characterization/drive_amplitude_sweep.csv,direction,provenance,text,升降扫描方向或重复标签
+data/characterization/drive_amplitude_sweep.csv,sweep_order,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_sweep.csv,generator_readback,instrument_readback,text,发生器波形参数读回，幅度/频率为仪器设置
+data/characterization/drive_amplitude_sweep.csv,CH1_scale_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_sweep.csv,CH2_scale_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_sweep.csv,f0_measured_Hz,extracted_response,Hz,基于实测复数响应相位零点得到的共振频率
+data/characterization/drive_amplitude_sweep.csv,f0_programmed_Hz,extracted_response,Hz,相位零点对应的发生器频率设定坐标
+data/characterization/drive_amplitude_sweep.csv,phase_fit_RMS_deg,equivalent_model_fit,degree,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,Hmax,extracted_response,1,相位零点附近响应；具体提取定义见原脚本
+data/characterization/drive_amplitude_sweep.csv,f_lower_3dB_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_sweep.csv,f_upper_3dB_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_sweep.csv,BW_measured_Hz,extracted_response,Hz,上下-3dB频率之差
+data/characterization/drive_amplitude_sweep.csv,Q_measured,derived,1,相位零点共振频率除以实测-3dB带宽
+data/characterization/drive_amplitude_sweep.csv,Vin_resonance_Vpk,legacy_auxiliary,V peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_sweep.csv,Vin_resonance_Vpp,legacy_auxiliary,V peak-to-peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_sweep.csv,Vout_resonance_Vpk,legacy_auxiliary,V peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_sweep.csv,I_resonance_pk_A,derived,A,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/drive_amplitude_sweep.csv,I_resonance_rms_A,derived,A,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/drive_amplitude_sweep.csv,CH1_H2_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_sweep.csv,CH1_H3_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_sweep.csv,CH2_H2_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_sweep.csv,CH2_H3_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_sweep.csv,CH1_peak_divisions,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_sweep.csv,CH2_peak_divisions,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_sweep.csv,start_elapsed_s,provenance,s,同一CSV最早时间为零点的相对秒数；各CSV零点独立
+data/characterization/drive_amplitude_sweep.csv,Vin_resonance_Vpk_uncorrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_sweep.csv,Vout_resonance_Vpk_uncorrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_sweep.csv,Vin_resonance_Vpp_uncorrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_sweep.csv,Hmax_uncorrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_sweep.csv,I_resonance_pk_A_uncorrected,derived,unspecified,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/drive_amplitude_sweep.csv,I_resonance_rms_A_uncorrected,derived,unspecified,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/drive_amplitude_sweep.csv,CH1_scale_correction_factor,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_sweep.csv,CH2_scale_correction_factor,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/drive_amplitude_sweep.csv,Rs_from_Hmax_ohm,equivalent_model_fit,ohm,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,Rs_fit_ohm_uncorrected,equivalent_model_fit,unspecified,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,L_eff_fit_H_uncorrected,equivalent_model_fit,unspecified,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,L_eff_fit_uH_uncorrected,equivalent_model_fit,unspecified,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,C_eff_fit_F_uncorrected,equivalent_model_fit,unspecified,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,C_eff_fit_nF_uncorrected,equivalent_model_fit,unspecified,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,f0_complex_fit_Hz_uncorrected,equivalent_model_fit,unspecified,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,BW_complex_fit_Hz_uncorrected,equivalent_model_fit,unspecified,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,Q_complex_fit_uncorrected,equivalent_model_fit,unspecified,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,complex_H_RMSE_uncorrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_sweep.csv,complex_fit_success_uncorrected,equivalent_model_fit,unspecified,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,complex_fit_reliable_uncorrected,equivalent_model_fit,unspecified,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,complex_fit_n_uncorrected,equivalent_model_fit,unspecified,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,complex_H_relative_RMSE_uncorrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_sweep.csv,channel_delay_fit_s_uncorrected,equivalent_model_fit,unspecified,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,Rs_fit_ohm,equivalent_model_fit,ohm,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,L_eff_fit_H,equivalent_model_fit,H,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,L_eff_fit_uH,equivalent_model_fit,uH,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,C_eff_fit_F,equivalent_model_fit,F,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,C_eff_fit_nF,equivalent_model_fit,nF,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,f0_complex_fit_Hz,equivalent_model_fit,Hz,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,BW_complex_fit_Hz,equivalent_model_fit,Hz,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,Q_complex_fit,equivalent_model_fit,unspecified,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,complex_H_RMSE,equivalent_model_fit,unspecified,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,complex_H_relative_RMSE,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/drive_amplitude_sweep.csv,channel_delay_fit_s,equivalent_model_fit,s,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/drive_amplitude_sweep.csv,complex_fit_success,quality,boolean,优化器是否成功终止；不等于可靠性通过
+data/characterization/drive_amplitude_sweep.csv,complex_fit_reliable,quality,boolean,历史工作流复数拟合可靠性标志
+data/characterization/drive_amplitude_sweep.csv,complex_fit_n,equivalent_model_fit,unspecified,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/characterization/low_drive_1khz_range_ab.csv,stage,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_ab.csv,repeat,provenance,1,同一驱动设定下的重复编号
+data/characterization/low_drive_1khz_range_ab.csv,fm_Hz,setting,Hz,调制频率
+data/characterization/low_drive_1khz_range_ab.csv,carrier_programmed_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/low_drive_1khz_range_ab.csv,amp_Vpp,legacy_auxiliary,V peak-to-peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_ab.csv,CH1_scale_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_ab.csv,CH2_scale_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_ab.csv,CH1_scale_correction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_ab.csv,CH2_scale_correction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_ab.csv,CH1_clipped,quality,boolean,ADC削顶检查标志
+data/characterization/low_drive_1khz_range_ab.csv,CH2_clipped,quality,boolean,ADC削顶检查标志
+data/characterization/low_drive_1khz_range_ab.csv,CH1_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_ab.csv,CH1_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_ab.csv,CH2_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_ab.csv,CH2_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_ab.csv,CH1_adc_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_ab.csv,CH2_adc_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_ab.csv,Vin_carrier_Vpk_corrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_ab.csv,Vout_carrier_Vpk_corrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_ab.csv,H_L,derived,1,下边带CH2/CH1幅度比
+data/characterization/low_drive_1khz_range_ab.csv,H_C,derived,1,载波CH2/CH1幅度比
+data/characterization/low_drive_1khz_range_ab.csv,H_U,derived,1,上边带CH2/CH1幅度比
+data/characterization/low_drive_1khz_range_ab.csv,T_lower,derived,1,H_L/H_C
+data/characterization/low_drive_1khz_range_ab.csv,T_upper,derived,1,H_U/H_C
+data/characterization/low_drive_1khz_range_ab.csv,T_mean,derived,1,(T_lower+T_upper)/2
+data/characterization/low_drive_1khz_range_ab.csv,all_three_bins_match,quality,boolean,两通道相应频谱线峰值FFT bin一致性
+data/characterization/low_drive_1khz_range_ab.csv,all_peak_frequencies_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_ab_summary.csv,,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_ab_summary.csv,T_lower,derived,1,H_L/H_C
+data/characterization/low_drive_1khz_range_ab_summary.csv,T_lower,derived,1,H_L/H_C
+data/characterization/low_drive_1khz_range_ab_summary.csv,T_lower,derived,1,H_L/H_C
+data/characterization/low_drive_1khz_range_ab_summary.csv,T_lower,derived,1,H_L/H_C
+data/characterization/low_drive_1khz_range_ab_summary.csv,T_upper,derived,1,H_U/H_C
+data/characterization/low_drive_1khz_range_ab_summary.csv,T_upper,derived,1,H_U/H_C
+data/characterization/low_drive_1khz_range_ab_summary.csv,T_upper,derived,1,H_U/H_C
+data/characterization/low_drive_1khz_range_ab_summary.csv,T_upper,derived,1,H_U/H_C
+data/characterization/low_drive_1khz_range_ab_summary.csv,T_mean,derived,1,(T_lower+T_upper)/2
+data/characterization/low_drive_1khz_range_ab_summary.csv,T_mean,derived,1,(T_lower+T_upper)/2
+data/characterization/low_drive_1khz_range_ab_summary.csv,T_mean,derived,1,(T_lower+T_upper)/2
+data/characterization/low_drive_1khz_range_ab_summary.csv,T_mean,derived,1,(T_lower+T_upper)/2
+data/characterization/low_drive_1khz_range_ab_summary.csv,H_C,derived,1,载波CH2/CH1幅度比
+data/characterization/low_drive_1khz_range_ab_summary.csv,H_C,derived,1,载波CH2/CH1幅度比
+data/characterization/low_drive_1khz_range_ab_summary.csv,H_C,derived,1,载波CH2/CH1幅度比
+data/characterization/low_drive_1khz_range_ab_summary.csv,H_C,derived,1,载波CH2/CH1幅度比
+data/characterization/low_drive_1khz_range_ab_summary.csv,Vin_carrier_Vpk_corrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_ab_summary.csv,Vin_carrier_Vpk_corrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_ab_summary.csv,Vin_carrier_Vpk_corrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_ab_summary.csv,Vin_carrier_Vpk_corrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_ab_summary.csv,Vout_carrier_Vpk_corrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_ab_summary.csv,Vout_carrier_Vpk_corrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_ab_summary.csv,Vout_carrier_Vpk_corrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_ab_summary.csv,Vout_carrier_Vpk_corrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_ab_summary.csv,CH1_adc_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_ab_summary.csv,CH1_adc_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_ab_summary.csv,CH1_adc_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_ab_summary.csv,CH1_adc_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_ab_summary.csv,CH2_adc_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_ab_summary.csv,CH2_adc_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_ab_summary.csv,CH2_adc_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_ab_summary.csv,CH2_adc_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_bab.csv,timestamp_elapsed_s,provenance,s,同一CSV最早时间为零点的相对秒数；各CSV零点独立
+data/characterization/low_drive_1khz_range_bab.csv,stage,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_bab.csv,repeat,provenance,1,同一驱动设定下的重复编号
+data/characterization/low_drive_1khz_range_bab.csv,fm_Hz,setting,Hz,调制频率
+data/characterization/low_drive_1khz_range_bab.csv,carrier_programmed_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/low_drive_1khz_range_bab.csv,amp_Vpp,legacy_auxiliary,V peak-to-peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_bab.csv,CH1_scale_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_bab.csv,CH2_scale_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_bab.csv,CH1_scale_correction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_bab.csv,CH2_scale_correction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_bab.csv,CH1_clipped,quality,boolean,ADC削顶检查标志
+data/characterization/low_drive_1khz_range_bab.csv,CH2_clipped,quality,boolean,ADC削顶检查标志
+data/characterization/low_drive_1khz_range_bab.csv,CH1_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_bab.csv,CH1_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_bab.csv,CH2_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_bab.csv,CH2_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_bab.csv,CH1_adc_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_bab.csv,CH2_adc_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_bab.csv,Vin_carrier_Vpk_corrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_bab.csv,Vout_carrier_Vpk_corrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_bab.csv,H_L,derived,1,下边带CH2/CH1幅度比
+data/characterization/low_drive_1khz_range_bab.csv,H_C,derived,1,载波CH2/CH1幅度比
+data/characterization/low_drive_1khz_range_bab.csv,H_U,derived,1,上边带CH2/CH1幅度比
+data/characterization/low_drive_1khz_range_bab.csv,T_lower,derived,1,H_L/H_C
+data/characterization/low_drive_1khz_range_bab.csv,T_upper,derived,1,H_U/H_C
+data/characterization/low_drive_1khz_range_bab.csv,T_mean,derived,1,(T_lower+T_upper)/2
+data/characterization/low_drive_1khz_range_bab.csv,all_three_bins_match,quality,boolean,两通道相应频谱线峰值FFT bin一致性
+data/characterization/low_drive_1khz_range_bab.csv,all_peak_frequencies_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_bab_summary.csv,,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_bab_summary.csv,T_lower,derived,1,H_L/H_C
+data/characterization/low_drive_1khz_range_bab_summary.csv,T_lower,derived,1,H_L/H_C
+data/characterization/low_drive_1khz_range_bab_summary.csv,T_lower,derived,1,H_L/H_C
+data/characterization/low_drive_1khz_range_bab_summary.csv,T_lower,derived,1,H_L/H_C
+data/characterization/low_drive_1khz_range_bab_summary.csv,T_upper,derived,1,H_U/H_C
+data/characterization/low_drive_1khz_range_bab_summary.csv,T_upper,derived,1,H_U/H_C
+data/characterization/low_drive_1khz_range_bab_summary.csv,T_upper,derived,1,H_U/H_C
+data/characterization/low_drive_1khz_range_bab_summary.csv,T_upper,derived,1,H_U/H_C
+data/characterization/low_drive_1khz_range_bab_summary.csv,T_mean,derived,1,(T_lower+T_upper)/2
+data/characterization/low_drive_1khz_range_bab_summary.csv,T_mean,derived,1,(T_lower+T_upper)/2
+data/characterization/low_drive_1khz_range_bab_summary.csv,T_mean,derived,1,(T_lower+T_upper)/2
+data/characterization/low_drive_1khz_range_bab_summary.csv,T_mean,derived,1,(T_lower+T_upper)/2
+data/characterization/low_drive_1khz_range_bab_summary.csv,H_C,derived,1,载波CH2/CH1幅度比
+data/characterization/low_drive_1khz_range_bab_summary.csv,H_C,derived,1,载波CH2/CH1幅度比
+data/characterization/low_drive_1khz_range_bab_summary.csv,H_C,derived,1,载波CH2/CH1幅度比
+data/characterization/low_drive_1khz_range_bab_summary.csv,H_C,derived,1,载波CH2/CH1幅度比
+data/characterization/low_drive_1khz_range_bab_summary.csv,Vin_carrier_Vpk_corrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_bab_summary.csv,Vin_carrier_Vpk_corrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_bab_summary.csv,Vin_carrier_Vpk_corrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_bab_summary.csv,Vin_carrier_Vpk_corrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_bab_summary.csv,Vout_carrier_Vpk_corrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_bab_summary.csv,Vout_carrier_Vpk_corrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_bab_summary.csv,Vout_carrier_Vpk_corrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_bab_summary.csv,Vout_carrier_Vpk_corrected,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_1khz_range_bab_summary.csv,CH1_adc_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_bab_summary.csv,CH1_adc_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_bab_summary.csv,CH1_adc_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_bab_summary.csv,CH1_adc_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_bab_summary.csv,CH2_adc_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_bab_summary.csv,CH2_adc_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_bab_summary.csv,CH2_adc_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_1khz_range_bab_summary.csv,CH2_adc_fraction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,fm_Hz,setting,Hz,调制频率
+data/characterization/low_drive_snr_repeats.csv,repeat,provenance,1,同一驱动设定下的重复编号
+data/characterization/low_drive_snr_repeats.csv,amplitude_programmed_Vpp,setting,Vpp,发生器设定峰峰值；不等同于CH1实测Vin
+data/characterization/low_drive_snr_repeats.csv,carrier_programmed_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/low_drive_snr_repeats.csv,depth_percent,legacy_auxiliary,%,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_snr_repeats.csv,record_points,setting_or_readback,unspecified,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/low_drive_snr_repeats.csv,sample_rate_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/low_drive_snr_repeats.csv,record_duration_s,legacy_auxiliary,s,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_snr_repeats.csv,fft_bin_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_scale_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_scale_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_scale_correction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_scale_correction,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_clipped,quality,boolean,ADC削顶检查标志
+data/characterization/low_drive_snr_repeats.csv,CH2_clipped,quality,boolean,ADC削顶检查标志
+data/characterization/low_drive_snr_repeats.csv,CH1_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_LSB_frequency,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_LSB_amp_raw,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_LSB_amp_corrected,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_LSB_noise_raw,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_LSB_noise_corrected,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_LSB_snr,extracted_feature,unspecified,局部FFT单bin峰值相对噪声底的估计
+data/characterization/low_drive_snr_repeats.csv,CH1_LSB_bin,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_LSB_noise_bins,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_LSB_excluded_spur_bins,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_carrier_frequency,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_carrier_amp_raw,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_carrier_amp_corrected,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_carrier_noise_raw,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_carrier_noise_corrected,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_carrier_snr,extracted_feature,unspecified,局部FFT单bin峰值相对噪声底的估计
+data/characterization/low_drive_snr_repeats.csv,CH1_carrier_bin,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_carrier_noise_bins,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_carrier_excluded_spur_bins,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_USB_frequency,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_USB_amp_raw,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_USB_amp_corrected,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_USB_noise_raw,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_USB_noise_corrected,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_USB_snr,extracted_feature,unspecified,局部FFT单bin峰值相对噪声底的估计
+data/characterization/low_drive_snr_repeats.csv,CH1_USB_bin,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_USB_noise_bins,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH1_USB_excluded_spur_bins,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_LSB_frequency,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_LSB_amp_raw,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_LSB_amp_corrected,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_LSB_noise_raw,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_LSB_noise_corrected,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_LSB_snr,extracted_feature,unspecified,局部FFT单bin峰值相对噪声底的估计
+data/characterization/low_drive_snr_repeats.csv,CH2_LSB_bin,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_LSB_noise_bins,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_LSB_excluded_spur_bins,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_carrier_frequency,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_carrier_amp_raw,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_carrier_amp_corrected,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_carrier_noise_raw,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_carrier_noise_corrected,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_carrier_snr,extracted_feature,unspecified,局部FFT单bin峰值相对噪声底的估计
+data/characterization/low_drive_snr_repeats.csv,CH2_carrier_bin,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_carrier_noise_bins,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_carrier_excluded_spur_bins,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_USB_frequency,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_USB_amp_raw,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_USB_amp_corrected,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_USB_noise_raw,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_USB_noise_corrected,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_USB_snr,extracted_feature,unspecified,局部FFT单bin峰值相对噪声底的估计
+data/characterization/low_drive_snr_repeats.csv,CH2_USB_bin,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_USB_noise_bins,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,CH2_USB_excluded_spur_bins,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_repeats.csv,LSB_same_bin_CH1_CH2,quality,boolean,两通道相应频谱线峰值FFT bin一致性
+data/characterization/low_drive_snr_repeats.csv,carrier_same_bin_CH1_CH2,quality,boolean,两通道相应频谱线峰值FFT bin一致性
+data/characterization/low_drive_snr_repeats.csv,USB_same_bin_CH1_CH2,quality,boolean,两通道相应频谱线峰值FFT bin一致性
+data/characterization/low_drive_snr_repeats.csv,H_L,derived,1,下边带CH2/CH1幅度比
+data/characterization/low_drive_snr_repeats.csv,H_C,derived,1,载波CH2/CH1幅度比
+data/characterization/low_drive_snr_repeats.csv,H_U,derived,1,上边带CH2/CH1幅度比
+data/characterization/low_drive_snr_repeats.csv,T_lower,derived,1,H_L/H_C
+data/characterization/low_drive_snr_repeats.csv,T_upper,derived,1,H_U/H_C
+data/characterization/low_drive_snr_repeats.csv,T_mean,derived,1,(T_lower+T_upper)/2
+data/characterization/low_drive_snr_sweep.csv,fm_Hz,setting,Hz,调制频率
+data/characterization/low_drive_snr_sweep.csv,repeats,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_snr_sweep.csv,amplitude_programmed_Vpp,setting,Vpp,发生器设定峰峰值；不等同于CH1实测Vin
+data/characterization/low_drive_snr_sweep.csv,carrier_programmed_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/low_drive_snr_sweep.csv,depth_percent,legacy_auxiliary,%,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_snr_sweep.csv,record_points,setting_or_readback,unspecified,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/low_drive_snr_sweep.csv,sample_rate_Hz_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,record_duration_s_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,fft_bin_Hz_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,all_captures_unclipped,quality,boolean,ADC削顶检查标志
+data/characterization/low_drive_snr_sweep.csv,all_component_channel_bins_match,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/low_drive_snr_sweep.csv,H_L_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,H_L_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,H_L_relative_sd_percent,statistic,%,100×样本标准差/绝对均值
+data/characterization/low_drive_snr_sweep.csv,H_C_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,H_C_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,H_C_relative_sd_percent,statistic,%,100×样本标准差/绝对均值
+data/characterization/low_drive_snr_sweep.csv,H_U_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,H_U_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,H_U_relative_sd_percent,statistic,%,100×样本标准差/绝对均值
+data/characterization/low_drive_snr_sweep.csv,T_lower_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,T_lower_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,T_lower_relative_sd_percent,statistic,%,100×样本标准差/绝对均值
+data/characterization/low_drive_snr_sweep.csv,T_upper_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,T_upper_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,T_upper_relative_sd_percent,statistic,%,100×样本标准差/绝对均值
+data/characterization/low_drive_snr_sweep.csv,T_mean_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,T_mean_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,T_mean_relative_sd_percent,statistic,%,100×样本标准差/绝对均值
+data/characterization/low_drive_snr_sweep.csv,CH1_LSB_amp_corrected_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH1_LSB_amp_corrected_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH1_LSB_noise_corrected_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH1_LSB_noise_corrected_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH1_LSB_snr_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH1_LSB_snr_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH1_LSB_frequency_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH1_LSB_frequency_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH1_carrier_amp_corrected_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH1_carrier_amp_corrected_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH1_carrier_noise_corrected_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH1_carrier_noise_corrected_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH1_carrier_snr_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH1_carrier_snr_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH1_carrier_frequency_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH1_carrier_frequency_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH1_USB_amp_corrected_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH1_USB_amp_corrected_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH1_USB_noise_corrected_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH1_USB_noise_corrected_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH1_USB_snr_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH1_USB_snr_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH1_USB_frequency_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH1_USB_frequency_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH2_LSB_amp_corrected_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH2_LSB_amp_corrected_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH2_LSB_noise_corrected_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH2_LSB_noise_corrected_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH2_LSB_snr_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH2_LSB_snr_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH2_LSB_frequency_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH2_LSB_frequency_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH2_carrier_amp_corrected_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH2_carrier_amp_corrected_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH2_carrier_noise_corrected_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH2_carrier_noise_corrected_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH2_carrier_snr_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH2_carrier_snr_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH2_carrier_frequency_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH2_carrier_frequency_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH2_USB_amp_corrected_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH2_USB_amp_corrected_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH2_USB_noise_corrected_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH2_USB_noise_corrected_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH2_USB_snr_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH2_USB_snr_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH2_USB_frequency_mean,statistic,same as base field,相应分组的算术平均值
+data/characterization/low_drive_snr_sweep.csv,CH2_USB_frequency_sd,statistic,same as base field,跨相应sweep/重复的样本标准差；需结合所在表和原脚本
+data/characterization/low_drive_snr_sweep.csv,CH1_LSB_snr_min,extracted_feature,unspecified,局部FFT单bin峰值相对噪声底的估计
+data/characterization/low_drive_snr_sweep.csv,CH1_USB_snr_min,extracted_feature,unspecified,局部FFT单bin峰值相对噪声底的估计
+data/characterization/low_drive_snr_sweep.csv,CH2_LSB_snr_min,extracted_feature,unspecified,局部FFT单bin峰值相对噪声底的估计
+data/characterization/low_drive_snr_sweep.csv,CH2_USB_snr_min,extracted_feature,unspecified,局部FFT单bin峰值相对噪声底的估计
+data/characterization/low_drive_snr_sweep.csv,CH1_LSB_bin_stable_across_repeats,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_sweep.csv,CH1_carrier_bin_stable_across_repeats,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_sweep.csv,CH1_USB_bin_stable_across_repeats,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_sweep.csv,CH2_LSB_bin_stable_across_repeats,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_sweep.csv,CH2_carrier_bin_stable_across_repeats,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_sweep.csv,CH2_USB_bin_stable_across_repeats,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/low_drive_snr_sweep.csv,all_line_bins_stable_across_repeats,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/resonance_refinement.csv,label,provenance,text,扫描阶段标签；频响绘图应依原脚本筛选
+data/characterization/resonance_refinement.csv,frequency_set_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/resonance_refinement.csv,frequency_measured_Hz,extracted_feature,Hz,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/resonance_refinement.csv,sample_rate_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/resonance_refinement.csv,dt_s,legacy_auxiliary,s,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/resonance_refinement.csv,n_points,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/resonance_refinement.csv,record_duration_s,legacy_auxiliary,s,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/resonance_refinement.csv,vin_Vpk,extracted_feature,V peak,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/resonance_refinement.csv,vout_Vpk,extracted_feature,V peak,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/resonance_refinement.csv,H_real,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/resonance_refinement.csv,H_imag,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/resonance_refinement.csv,H_mag,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/resonance_refinement.csv,H_phase_deg,extracted_feature,degree,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/resonance_refinement.csv,Z_real_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/resonance_refinement.csv,Z_imag_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/resonance_refinement.csv,Z_mag_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/resonance_refinement.csv,THD_residual_CH1_Vrms,legacy_auxiliary,V RMS,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/resonance_refinement.csv,THD_residual_CH2_Vrms,legacy_auxiliary,V RMS,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/resonance_refinement.csv,vin_dc_V,extracted_feature,V,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/resonance_refinement.csv,vout_dc_V,extracted_feature,V,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/resonance_refinement.csv,CH1_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/resonance_refinement.csv,CH2_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/resonance_refinement.csv,CH1_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/resonance_refinement.csv,CH1_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/resonance_refinement.csv,CH2_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/resonance_refinement.csv,CH2_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/resonance_scan.csv,label,provenance,text,扫描阶段标签；频响绘图应依原脚本筛选
+data/characterization/resonance_scan.csv,frequency_set_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/resonance_scan.csv,frequency_measured_Hz,extracted_feature,Hz,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/resonance_scan.csv,sample_rate_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/resonance_scan.csv,dt_s,legacy_auxiliary,s,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/resonance_scan.csv,n_points,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/resonance_scan.csv,record_duration_s,legacy_auxiliary,s,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/resonance_scan.csv,vin_Vpk,extracted_feature,V peak,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/resonance_scan.csv,vout_Vpk,extracted_feature,V peak,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/resonance_scan.csv,H_real,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/resonance_scan.csv,H_imag,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/resonance_scan.csv,H_mag,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/resonance_scan.csv,H_phase_deg,extracted_feature,degree,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/resonance_scan.csv,Z_real_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/resonance_scan.csv,Z_imag_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/resonance_scan.csv,Z_mag_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/resonance_scan.csv,THD_residual_CH1_Vrms,legacy_auxiliary,V RMS,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/resonance_scan.csv,THD_residual_CH2_Vrms,legacy_auxiliary,V RMS,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/resonance_scan.csv,vin_dc_V,extracted_feature,V,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/resonance_scan.csv,vout_dc_V,extracted_feature,V,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/resonance_scan.csv,CH1_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/resonance_scan.csv,CH2_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/resonance_scan.csv,CH1_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/resonance_scan.csv,CH1_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/resonance_scan.csv,CH2_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/resonance_scan.csv,CH2_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,label,provenance,text,扫描阶段标签；频响绘图应依原脚本筛选
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,frequency_set_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,frequency_measured_Hz,extracted_feature,Hz,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,sample_rate_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,dt_s,legacy_auxiliary,s,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,n_points,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,record_duration_s,legacy_auxiliary,s,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,vin_Vpk,extracted_feature,V peak,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,vout_Vpk,extracted_feature,V peak,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,H_real,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,H_imag,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,H_mag,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,H_phase_deg,extracted_feature,degree,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,Z_real_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,Z_imag_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,Z_mag_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,THD_residual_CH1_Vrms,legacy_auxiliary,V RMS,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,THD_residual_CH2_Vrms,legacy_auxiliary,V RMS,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,vin_dc_V,extracted_feature,V,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,vout_dc_V,extracted_feature,V,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,CH1_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,CH2_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,CH1_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,CH1_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,CH2_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,CH2_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,scale_condition,setting_or_readback,unspecified,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/scope_scale_crosscheck_0p1vpp.csv,repeat,provenance,1,同一驱动设定下的重复编号
+data/characterization/scope_vertical_range_calibration.csv,label,provenance,text,扫描阶段标签；频响绘图应依原脚本筛选
+data/characterization/scope_vertical_range_calibration.csv,frequency_set_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/scope_vertical_range_calibration.csv,frequency_measured_Hz,extracted_feature,Hz,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/scope_vertical_range_calibration.csv,sample_rate_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/scope_vertical_range_calibration.csv,dt_s,legacy_auxiliary,s,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/scope_vertical_range_calibration.csv,n_points,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/scope_vertical_range_calibration.csv,record_duration_s,legacy_auxiliary,s,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/scope_vertical_range_calibration.csv,vin_Vpk,extracted_feature,V peak,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/scope_vertical_range_calibration.csv,vout_Vpk,extracted_feature,V peak,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/scope_vertical_range_calibration.csv,H_real,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/scope_vertical_range_calibration.csv,H_imag,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/scope_vertical_range_calibration.csv,H_mag,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/scope_vertical_range_calibration.csv,H_phase_deg,extracted_feature,degree,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/scope_vertical_range_calibration.csv,Z_real_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/scope_vertical_range_calibration.csv,Z_imag_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/scope_vertical_range_calibration.csv,Z_mag_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/characterization/scope_vertical_range_calibration.csv,THD_residual_CH1_Vrms,legacy_auxiliary,V RMS,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/scope_vertical_range_calibration.csv,THD_residual_CH2_Vrms,legacy_auxiliary,V RMS,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/scope_vertical_range_calibration.csv,vin_dc_V,extracted_feature,V,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/scope_vertical_range_calibration.csv,vout_dc_V,extracted_feature,V,从原始波形提取的正弦/频谱特征，原波形未发布
+data/characterization/scope_vertical_range_calibration.csv,CH1_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/scope_vertical_range_calibration.csv,CH2_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/scope_vertical_range_calibration.csv,CH1_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/scope_vertical_range_calibration.csv,CH1_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/scope_vertical_range_calibration.csv,CH2_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/scope_vertical_range_calibration.csv,CH2_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/characterization/scope_vertical_range_calibration.csv,tested_channel,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/characterization/scope_vertical_range_calibration.csv,amplitude_programmed_Vpp,setting,Vpp,发生器设定峰峰值；不等同于CH1实测Vin
+data/characterization/scope_vertical_range_calibration.csv,tested_scale_V_div,setting_or_readback,V/div,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/scope_vertical_range_calibration.csv,fixed_other_channel_scale_V_div,setting_or_readback,V/div,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/characterization/scope_vertical_range_calibration.csv,repeat,provenance,1,同一驱动设定下的重复编号
+data/drive_extreme/acquisition_audit.csv,timestamp_elapsed_s,provenance,s,同一CSV最早时间为零点的相对秒数；各CSV零点独立
+data/drive_extreme/acquisition_audit.csv,amplitude_programmed_Vpp,setting,Vpp,发生器设定峰峰值；不等同于CH1实测Vin
+data/drive_extreme/acquisition_audit.csv,repeat,provenance,1,同一驱动设定下的重复编号
+data/drive_extreme/acquisition_audit.csv,sweep_order,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_extreme/acquisition_audit.csv,label,provenance,text,扫描阶段标签；频响绘图应依原脚本筛选
+data/drive_extreme/acquisition_audit.csv,frequency_set_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/drive_extreme/acquisition_audit.csv,frequency_measured_Hz,extracted_feature,Hz,从原始波形提取的正弦/频谱特征，原波形未发布
+data/drive_extreme/acquisition_audit.csv,n_points,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_extreme/acquisition_audit.csv,CH1_scale_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/acquisition_audit.csv,CH2_scale_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/acquisition_audit.csv,CH1_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/acquisition_audit.csv,CH1_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/acquisition_audit.csv,CH2_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/acquisition_audit.csv,CH2_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/acquisition_audit.csv,clipped_CH1,quality,boolean,ADC削顶检查标志
+data/drive_extreme/acquisition_audit.csv,clipped_CH2,quality,boolean,ADC削顶检查标志
+data/drive_extreme/acquisition_audit.csv,generator_output,instrument_readback,text,发生器输出与负载状态读回
+data/drive_extreme/acquisition_audit.csv,generator_error,setting_or_readback,unspecified,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/drive_extreme/acquisition_audit.csv,scope_error,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_extreme/acquisition_audit.csv,acquisition_valid,quality,boolean,该捕获是否通过原工作流检查；不证明整个重复已完成
+data/drive_extreme/acquisition_audit.csv,validity_flags,quality,text,有效性原因/标志，空值表示未记录额外标志
+data/drive_extreme/drive_dependence_results.csv,amplitude_programmed_Vpp,setting,Vpp,发生器设定峰峰值；不等同于CH1实测Vin
+data/drive_extreme/drive_dependence_results.csv,direction,provenance,text,升降扫描方向或重复标签
+data/drive_extreme/drive_dependence_results.csv,sweep_order,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_extreme/drive_dependence_results.csv,generator_readback,instrument_readback,text,发生器波形参数读回，幅度/频率为仪器设置
+data/drive_extreme/drive_dependence_results.csv,CH1_scale_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/drive_dependence_results.csv,CH2_scale_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/drive_dependence_results.csv,f0_measured_Hz,extracted_response,Hz,基于实测复数响应相位零点得到的共振频率
+data/drive_extreme/drive_dependence_results.csv,f0_programmed_Hz,extracted_response,Hz,相位零点对应的发生器频率设定坐标
+data/drive_extreme/drive_dependence_results.csv,phase_fit_RMS_deg,equivalent_model_fit,degree,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/drive_extreme/drive_dependence_results.csv,Hmax,extracted_response,1,相位零点附近响应；具体提取定义见原脚本
+data/drive_extreme/drive_dependence_results.csv,f_lower_3dB_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_extreme/drive_dependence_results.csv,f_upper_3dB_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_extreme/drive_dependence_results.csv,BW_measured_Hz,extracted_response,Hz,上下-3dB频率之差
+data/drive_extreme/drive_dependence_results.csv,Q_measured,derived,1,相位零点共振频率除以实测-3dB带宽
+data/drive_extreme/drive_dependence_results.csv,Vin_resonance_Vpk,legacy_auxiliary,V peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_extreme/drive_dependence_results.csv,Vin_resonance_Vpp,legacy_auxiliary,V peak-to-peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_extreme/drive_dependence_results.csv,Vout_resonance_Vpk,legacy_auxiliary,V peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_extreme/drive_dependence_results.csv,I_resonance_pk_A,derived,A,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/drive_extreme/drive_dependence_results.csv,I_resonance_rms_A,derived,A,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/drive_extreme/drive_dependence_results.csv,Rs_fit_ohm,equivalent_model_fit,ohm,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/drive_extreme/drive_dependence_results.csv,L_eff_fit_H,equivalent_model_fit,H,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/drive_extreme/drive_dependence_results.csv,L_eff_fit_uH,equivalent_model_fit,uH,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/drive_extreme/drive_dependence_results.csv,C_eff_fit_F,equivalent_model_fit,F,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/drive_extreme/drive_dependence_results.csv,C_eff_fit_nF,equivalent_model_fit,nF,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/drive_extreme/drive_dependence_results.csv,f0_complex_fit_Hz,equivalent_model_fit,Hz,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/drive_extreme/drive_dependence_results.csv,BW_complex_fit_Hz,equivalent_model_fit,Hz,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/drive_extreme/drive_dependence_results.csv,Q_complex_fit,equivalent_model_fit,unspecified,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/drive_extreme/drive_dependence_results.csv,complex_H_RMSE,equivalent_model_fit,unspecified,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/drive_extreme/drive_dependence_results.csv,complex_fit_success,quality,boolean,优化器是否成功终止；不等于可靠性通过
+data/drive_extreme/drive_dependence_results.csv,complex_fit_reliable,quality,boolean,历史工作流复数拟合可靠性标志
+data/drive_extreme/drive_dependence_results.csv,complex_fit_n,equivalent_model_fit,unspecified,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/drive_extreme/drive_dependence_results.csv,CH1_H2_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/drive_dependence_results.csv,CH1_H3_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/drive_dependence_results.csv,CH2_H2_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/drive_dependence_results.csv,CH2_H3_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/drive_dependence_results.csv,CH1_peak_divisions,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/drive_dependence_results.csv,CH2_peak_divisions,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/drive_dependence_results.csv,start_elapsed_s,provenance,s,同一CSV最早时间为零点的相对秒数；各CSV零点独立
+data/drive_extreme/drive_dependence_results.csv,repeat,provenance,1,同一驱动设定下的重复编号
+data/drive_extreme/drive_dependence_results.csv,measurement_valid,quality,boolean,该完整共振重复是否通过原工作流检查
+data/drive_extreme/drive_dependence_results.csv,validity_flags,quality,text,有效性原因/标志，空值表示未记录额外标志
+data/drive_extreme/drive_dependence_results.csv,CH1_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/drive_dependence_results.csv,CH1_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/drive_dependence_results.csv,CH2_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/drive_dependence_results.csv,CH2_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/drive_dependence_results.csv,clipped_CH1,quality,boolean,ADC削顶检查标志
+data/drive_extreme/drive_dependence_results.csv,clipped_CH2,quality,boolean,ADC削顶检查标志
+data/drive_extreme/drive_dependence_results.csv,frequency_scan_clipped_capture_count,quality,boolean,ADC削顶检查标志
+data/drive_extreme/drive_dependence_results.csv,scope_sample_rate_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/drive_extreme/drive_dependence_results.csv,scope_record_points,setting_or_readback,unspecified,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/drive_extreme/drive_dependence_results.csv,Vout_resonance_Vpp,legacy_auxiliary,V peak-to-peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_extreme/drive_dependence_results.csv,I_resonance_pk_A_from_Vout_over_R,derived,unspecified,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/drive_extreme/drive_dependence_results.csv,I_resonance_rms_A_from_Vout_over_R,derived,unspecified,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/drive_extreme/drive_dependence_results.csv,timestamp_elapsed_s,provenance,s,同一CSV最早时间为零点的相对秒数；各CSV零点独立
+data/drive_extreme/frequency_response_raw.csv,label,provenance,text,扫描阶段标签；频响绘图应依原脚本筛选
+data/drive_extreme/frequency_response_raw.csv,frequency_set_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/drive_extreme/frequency_response_raw.csv,frequency_measured_Hz,extracted_feature,Hz,从原始波形提取的正弦/频谱特征，原波形未发布
+data/drive_extreme/frequency_response_raw.csv,sample_rate_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/drive_extreme/frequency_response_raw.csv,dt_s,legacy_auxiliary,s,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_extreme/frequency_response_raw.csv,n_points,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_extreme/frequency_response_raw.csv,record_duration_s,legacy_auxiliary,s,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_extreme/frequency_response_raw.csv,vin_Vpk,extracted_feature,V peak,从原始波形提取的正弦/频谱特征，原波形未发布
+data/drive_extreme/frequency_response_raw.csv,vout_Vpk,extracted_feature,V peak,从原始波形提取的正弦/频谱特征，原波形未发布
+data/drive_extreme/frequency_response_raw.csv,H_real,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/drive_extreme/frequency_response_raw.csv,H_imag,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/drive_extreme/frequency_response_raw.csv,H_mag,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/drive_extreme/frequency_response_raw.csv,H_phase_deg,extracted_feature,degree,从原始波形提取的正弦/频谱特征，原波形未发布
+data/drive_extreme/frequency_response_raw.csv,Z_real_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/drive_extreme/frequency_response_raw.csv,Z_imag_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/drive_extreme/frequency_response_raw.csv,Z_mag_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/drive_extreme/frequency_response_raw.csv,THD_residual_CH1_Vrms,legacy_auxiliary,V RMS,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_extreme/frequency_response_raw.csv,THD_residual_CH2_Vrms,legacy_auxiliary,V RMS,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_extreme/frequency_response_raw.csv,vin_dc_V,extracted_feature,V,从原始波形提取的正弦/频谱特征，原波形未发布
+data/drive_extreme/frequency_response_raw.csv,vout_dc_V,extracted_feature,V,从原始波形提取的正弦/频谱特征，原波形未发布
+data/drive_extreme/frequency_response_raw.csv,CH1_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/frequency_response_raw.csv,CH2_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/frequency_response_raw.csv,CH1_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/frequency_response_raw.csv,CH1_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/frequency_response_raw.csv,CH2_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/frequency_response_raw.csv,CH2_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/frequency_response_raw.csv,amplitude_programmed_Vpp,setting,Vpp,发生器设定峰峰值；不等同于CH1实测Vin
+data/drive_extreme/frequency_response_raw.csv,repeat,provenance,1,同一驱动设定下的重复编号
+data/drive_extreme/frequency_response_raw.csv,sweep_order,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_extreme/frequency_response_raw.csv,captured_elapsed_s,provenance,s,同一CSV最早时间为零点的相对秒数；各CSV零点独立
+data/drive_extreme/frequency_response_raw.csv,clipped_CH1,quality,boolean,ADC削顶检查标志
+data/drive_extreme/frequency_response_raw.csv,clipped_CH2,quality,boolean,ADC削顶检查标志
+data/drive_extreme/frequency_response_raw.csv,acquisition_valid,quality,boolean,该捕获是否通过原工作流检查；不证明整个重复已完成
+data/drive_extreme/frequency_response_raw.csv,validity_flags,quality,text,有效性原因/标志，空值表示未记录额外标志
+data/drive_extreme/frequency_response_raw.csv,generator_bswv,instrument_readback,text,发生器波形参数读回
+data/drive_extreme/frequency_response_raw.csv,generator_output,instrument_readback,text,发生器输出与负载状态读回
+data/drive_extreme/frequency_response_raw.csv,generator_error,setting_or_readback,unspecified,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/drive_extreme/frequency_response_raw.csv,scope_error,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_extreme/frequency_response_raw.csv,generator_amplitude_readback_Vpp,setting_or_readback,V peak-to-peak,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/drive_extreme/harmonics.csv,harmonic_fundamental_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_extreme/harmonics.csv,frequency_resolution_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_extreme/harmonics.csv,CH1_fundamental_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/harmonics.csv,CH1_H2_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/harmonics.csv,CH1_H3_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/harmonics.csv,CH1_H2_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/harmonics.csv,CH1_H3_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/harmonics.csv,CH2_fundamental_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/harmonics.csv,CH2_H2_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/harmonics.csv,CH2_H3_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/harmonics.csv,CH2_H2_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/harmonics.csv,CH2_H3_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/harmonics.csv,CH1_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/harmonics.csv,CH2_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/harmonics.csv,CH1_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/harmonics.csv,CH1_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/harmonics.csv,CH2_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/harmonics.csv,CH2_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_extreme/harmonics.csv,amplitude_programmed_Vpp,setting,Vpp,发生器设定峰峰值；不等同于CH1实测Vin
+data/drive_extreme/harmonics.csv,direction,provenance,text,升降扫描方向或重复标签
+data/drive_extreme/harmonics.csv,sweep_order,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_extreme/harmonics.csv,Vin_resonance_Vpk,legacy_auxiliary,V peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_extreme/harmonics.csv,Vout_resonance_Vpk,legacy_auxiliary,V peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_extreme/harmonics.csv,I_resonance_pk_A,derived,A,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/drive_extreme/harmonics.csv,repeat,provenance,1,同一驱动设定下的重复编号
+data/drive_extreme/harmonics.csv,captured_elapsed_s,provenance,s,同一CSV最早时间为零点的相对秒数；各CSV零点独立
+data/drive_extreme/harmonics.csv,clipped_CH1,quality,boolean,ADC削顶检查标志
+data/drive_extreme/harmonics.csv,clipped_CH2,quality,boolean,ADC削顶检查标志
+data/drive_extreme/harmonics.csv,acquisition_valid,quality,boolean,该捕获是否通过原工作流检查；不证明整个重复已完成
+data/drive_extreme/harmonics.csv,validity_flags,quality,text,有效性原因/标志，空值表示未记录额外标志
+data/drive_extreme/harmonics.csv,generator_bswv,instrument_readback,text,发生器波形参数读回
+data/drive_extreme/harmonics.csv,generator_output,instrument_readback,text,发生器输出与负载状态读回
+data/drive_extreme/harmonics.csv,generator_error,setting_or_readback,unspecified,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/drive_extreme/harmonics.csv,scope_error,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_extreme/harmonics.csv,generator_amplitude_readback_Vpp,setting_or_readback,V peak-to-peak,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/drive_support/drive_dependence_frequency_scans.csv,label,provenance,text,扫描阶段标签；频响绘图应依原脚本筛选
+data/drive_support/drive_dependence_frequency_scans.csv,frequency_set_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/drive_support/drive_dependence_frequency_scans.csv,frequency_measured_Hz,extracted_feature,Hz,从原始波形提取的正弦/频谱特征，原波形未发布
+data/drive_support/drive_dependence_frequency_scans.csv,sample_rate_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/drive_support/drive_dependence_frequency_scans.csv,dt_s,legacy_auxiliary,s,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_support/drive_dependence_frequency_scans.csv,n_points,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_support/drive_dependence_frequency_scans.csv,record_duration_s,legacy_auxiliary,s,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_support/drive_dependence_frequency_scans.csv,vin_Vpk,extracted_feature,V peak,从原始波形提取的正弦/频谱特征，原波形未发布
+data/drive_support/drive_dependence_frequency_scans.csv,vout_Vpk,extracted_feature,V peak,从原始波形提取的正弦/频谱特征，原波形未发布
+data/drive_support/drive_dependence_frequency_scans.csv,H_real,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/drive_support/drive_dependence_frequency_scans.csv,H_imag,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/drive_support/drive_dependence_frequency_scans.csv,H_mag,extracted_feature,unspecified,从原始波形提取的正弦/频谱特征，原波形未发布
+data/drive_support/drive_dependence_frequency_scans.csv,H_phase_deg,extracted_feature,degree,从原始波形提取的正弦/频谱特征，原波形未发布
+data/drive_support/drive_dependence_frequency_scans.csv,Z_real_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/drive_support/drive_dependence_frequency_scans.csv,Z_imag_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/drive_support/drive_dependence_frequency_scans.csv,Z_mag_ohm,derived,ohm,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/drive_support/drive_dependence_frequency_scans.csv,THD_residual_CH1_Vrms,legacy_auxiliary,V RMS,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_support/drive_dependence_frequency_scans.csv,THD_residual_CH2_Vrms,legacy_auxiliary,V RMS,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_support/drive_dependence_frequency_scans.csv,vin_dc_V,extracted_feature,V,从原始波形提取的正弦/频谱特征，原波形未发布
+data/drive_support/drive_dependence_frequency_scans.csv,vout_dc_V,extracted_feature,V,从原始波形提取的正弦/频谱特征，原波形未发布
+data/drive_support/drive_dependence_frequency_scans.csv,CH1_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_frequency_scans.csv,CH2_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_frequency_scans.csv,CH1_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_frequency_scans.csv,CH1_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_frequency_scans.csv,CH2_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_frequency_scans.csv,CH2_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_frequency_scans.csv,amplitude_programmed_Vpp,setting,Vpp,发生器设定峰峰值；不等同于CH1实测Vin
+data/drive_support/drive_dependence_frequency_scans.csv,direction,provenance,text,升降扫描方向或重复标签
+data/drive_support/drive_dependence_frequency_scans.csv,sweep_order,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_support/drive_dependence_frequency_scans.csv,repeat,provenance,1,同一驱动设定下的重复编号
+data/drive_support/drive_dependence_harmonics.csv,harmonic_fundamental_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_support/drive_dependence_harmonics.csv,frequency_resolution_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_support/drive_dependence_harmonics.csv,CH1_fundamental_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_harmonics.csv,CH1_H2_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_harmonics.csv,CH1_H3_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_harmonics.csv,CH1_H2_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_harmonics.csv,CH1_H3_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_harmonics.csv,CH2_fundamental_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_harmonics.csv,CH2_H2_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_harmonics.csv,CH2_H3_Vpk,instrument_or_extracted_feature,V peak,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_harmonics.csv,CH2_H2_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_harmonics.csv,CH2_H3_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_harmonics.csv,CH1_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_harmonics.csv,CH2_vdiv_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_harmonics.csv,CH1_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_harmonics.csv,CH1_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_harmonics.csv,CH2_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_harmonics.csv,CH2_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_harmonics.csv,amplitude_programmed_Vpp,setting,Vpp,发生器设定峰峰值；不等同于CH1实测Vin
+data/drive_support/drive_dependence_harmonics.csv,direction,provenance,text,升降扫描方向或重复标签
+data/drive_support/drive_dependence_harmonics.csv,sweep_order,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_support/drive_dependence_harmonics.csv,Vin_resonance_Vpk,legacy_auxiliary,V peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_support/drive_dependence_harmonics.csv,Vout_resonance_Vpk,legacy_auxiliary,V peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_support/drive_dependence_harmonics.csv,I_resonance_pk_A,derived,A,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/drive_support/drive_dependence_harmonics.csv,repeat,provenance,1,同一驱动设定下的重复编号
+data/drive_support/drive_dependence_harmonics.csv,measurement_valid,quality,boolean,该完整共振重复是否通过原工作流检查
+data/drive_support/drive_dependence_support.csv,amplitude_programmed_Vpp,setting,Vpp,发生器设定峰峰值；不等同于CH1实测Vin
+data/drive_support/drive_dependence_support.csv,direction,provenance,text,升降扫描方向或重复标签
+data/drive_support/drive_dependence_support.csv,sweep_order,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_support/drive_dependence_support.csv,generator_readback,instrument_readback,text,发生器波形参数读回，幅度/频率为仪器设置
+data/drive_support/drive_dependence_support.csv,CH1_scale_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_support.csv,CH2_scale_V_div,instrument_or_extracted_feature,V/div,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_support.csv,f0_measured_Hz,extracted_response,Hz,基于实测复数响应相位零点得到的共振频率
+data/drive_support/drive_dependence_support.csv,f0_programmed_Hz,extracted_response,Hz,相位零点对应的发生器频率设定坐标
+data/drive_support/drive_dependence_support.csv,phase_fit_RMS_deg,equivalent_model_fit,degree,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/drive_support/drive_dependence_support.csv,Hmax,extracted_response,1,相位零点附近响应；具体提取定义见原脚本
+data/drive_support/drive_dependence_support.csv,f_lower_3dB_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_support/drive_dependence_support.csv,f_upper_3dB_Hz,legacy_auxiliary,Hz,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_support/drive_dependence_support.csv,BW_measured_Hz,extracted_response,Hz,上下-3dB频率之差
+data/drive_support/drive_dependence_support.csv,Q_measured,derived,1,相位零点共振频率除以实测-3dB带宽
+data/drive_support/drive_dependence_support.csv,Vin_resonance_Vpk,legacy_auxiliary,V peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_support/drive_dependence_support.csv,Vin_resonance_Vpp,legacy_auxiliary,V peak-to-peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_support/drive_dependence_support.csv,Vout_resonance_Vpk,legacy_auxiliary,V peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_support/drive_dependence_support.csv,I_resonance_pk_A,derived,A,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/drive_support/drive_dependence_support.csv,I_resonance_rms_A,derived,A,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/drive_support/drive_dependence_support.csv,Rs_fit_ohm,equivalent_model_fit,ohm,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/drive_support/drive_dependence_support.csv,L_eff_fit_H,equivalent_model_fit,H,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/drive_support/drive_dependence_support.csv,L_eff_fit_uH,equivalent_model_fit,uH,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/drive_support/drive_dependence_support.csv,C_eff_fit_F,equivalent_model_fit,F,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/drive_support/drive_dependence_support.csv,C_eff_fit_nF,equivalent_model_fit,nF,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/drive_support/drive_dependence_support.csv,f0_complex_fit_Hz,equivalent_model_fit,Hz,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/drive_support/drive_dependence_support.csv,BW_complex_fit_Hz,equivalent_model_fit,Hz,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/drive_support/drive_dependence_support.csv,Q_complex_fit,equivalent_model_fit,unspecified,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/drive_support/drive_dependence_support.csv,complex_H_RMSE,equivalent_model_fit,unspecified,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/drive_support/drive_dependence_support.csv,complex_fit_success,quality,boolean,优化器是否成功终止；不等于可靠性通过
+data/drive_support/drive_dependence_support.csv,complex_fit_reliable,quality,boolean,历史工作流复数拟合可靠性标志
+data/drive_support/drive_dependence_support.csv,complex_fit_n,equivalent_model_fit,unspecified,等效复数RLC模型参数/质量；结合可靠性标志，不作独立元件实测值
+data/drive_support/drive_dependence_support.csv,CH1_H2_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_support.csv,CH1_H3_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_support.csv,CH2_H2_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_support.csv,CH2_H3_dBc,instrument_or_extracted_feature,dBc,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_support.csv,CH1_peak_divisions,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_support.csv,CH2_peak_divisions,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_support.csv,start_elapsed_s,provenance,s,同一CSV最早时间为零点的相对秒数；各CSV零点独立
+data/drive_support/drive_dependence_support.csv,CH1_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_support.csv,CH1_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_support.csv,CH2_code_min,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_support.csv,CH2_code_max,instrument_or_extracted_feature,unspecified,通道设置、ADC质量指标或波形/频谱提取特征；见相应原脚本
+data/drive_support/drive_dependence_support.csv,repeat,provenance,1,同一驱动设定下的重复编号
+data/drive_support/drive_dependence_support.csv,scope_sample_rate_Hz,setting_or_readback,Hz,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/drive_support/drive_dependence_support.csv,scope_record_points,setting_or_readback,unspecified,仪器设置/读回或记录几何参数；并非独立物理量实测值
+data/drive_support/drive_dependence_support.csv,scope_record_duration_s,legacy_auxiliary,s,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_support/drive_dependence_support.csv,clipped_CH1,quality,boolean,ADC削顶检查标志
+data/drive_support/drive_dependence_support.csv,clipped_CH2,quality,boolean,ADC削顶检查标志
+data/drive_support/drive_dependence_support.csv,measurement_valid,quality,boolean,该完整共振重复是否通过原工作流检查
+data/drive_support/drive_dependence_support.csv,validity_flags,quality,text,有效性原因/标志，空值表示未记录额外标志
+data/drive_support/drive_dependence_support.csv,range_check_CH1_peak_divisions,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_support/drive_dependence_support.csv,range_check_CH2_peak_divisions,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_support/drive_dependence_support.csv,range_check_iterations,legacy_auxiliary,unspecified,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_support/drive_dependence_support.csv,frequency_scan_clipped_capture_count,quality,boolean,ADC削顶检查标志
+data/drive_support/drive_dependence_support.csv,Vout_resonance_Vpp,legacy_auxiliary,V peak-to-peak,保留的原有辅助字段；精确定义见对应批次采集/分析脚本
+data/drive_support/drive_dependence_support.csv,I_resonance_pk_A_from_Vout_over_R,derived,unspecified,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/drive_support/drive_dependence_support.csv,I_resonance_rms_A_from_Vout_over_R,derived,unspecified,基于传输比或Vout和标称5.1 ohm推导；见数据说明
+data/drive_support/drive_dependence_support.csv,Hmax_fit_valid,quality,boolean,与复数拟合可靠性有关的历史标志
+data/drive_support/drive_dependence_support.csv,timestamp_elapsed_s,provenance,s,同一CSV最早时间为零点的相对秒数；各CSV零点独立

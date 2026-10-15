@@ -1,0 +1,717 @@
+{
+  "schema_version": 1,
+  "description": "Sanitized measured features, preserved figures and run notes. No native waveforms included. Elapsed time zero is separate for each CSV.",
+  "files": [
+    {
+      "file": "data/am_initial/formal_am_end_checks.csv",
+      "rows": 5,
+      "bytes": 1877,
+      "sha256": "01b76269f51718ad867700134dee901852affe6292bca0ac49666ef54d3c4418",
+      "privacy_changes": [
+        {
+          "from": "initial_timestamp_start_utc",
+          "to": "initial_timestamp_start_elapsed_s"
+        },
+        {
+          "from": "endcheck_timestamp_start_utc",
+          "to": "endcheck_timestamp_start_elapsed_s"
+        },
+        {
+          "from": "initial_raw_waveform_filename",
+          "to": "initial_waveform_id"
+        },
+        {
+          "from": "endcheck_raw_waveform_filename",
+          "to": "endcheck_waveform_id"
+        }
+      ]
+    },
+    {
+      "file": "data/am_initial/formal_am_raw.csv",
+      "rows": 75,
+      "bytes": 71637,
+      "sha256": "121586e2f05b632112abf1b559e96ea539d385394215a7c958f58149cc41558a",
+      "privacy_changes": [
+        {
+          "from": "timestamp_start_utc",
+          "to": "timestamp_start_elapsed_s"
+        },
+        {
+          "from": "timestamp_end_utc",
+          "to": "timestamp_end_elapsed_s"
+        },
+        {
+          "from": "raw_waveform_filename",
+          "to": "waveform_id"
+        }
+      ]
+    },
+    {
+      "file": "data/am_initial/formal_am_summary.csv",
+      "rows": 15,
+      "bytes": 7304,
+      "sha256": "ef850d6638d654e033616ee19679ebe048f79600a469e141b95644579f38b665",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/am_initial/endcheck_drift.png",
+      "rows": null,
+      "bytes": 128351,
+      "sha256": "86398fcd991d5280295e375544d1005e204c7805c8cff3bcd7ccb44d64372650",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/am_initial/repeatability.png",
+      "rows": null,
+      "bytes": 129053,
+      "sha256": "d059d7b8be4557c9f410ddff0904fef75725927f6b0b3a6744c09c955693594a",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/am_initial/sweep_comparison.png",
+      "rows": null,
+      "bytes": 84327,
+      "sha256": "623bfc072cb9fc5b1abb348183c806605f300f943036aaa6b59621d74a24a31b",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/am_initial/T_lower_upper.png",
+      "rows": null,
+      "bytes": 125424,
+      "sha256": "2b1c3273f963f0c980a304db5b7326a31f24fc462cb708834b04a2b8c719ba5f",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/am_initial/T_mean.png",
+      "rows": null,
+      "bytes": 71391,
+      "sha256": "54a3f53de024395315f017a891e522ce94ecc5668ded04ed13b0df21880568dc",
+      "privacy_changes": []
+    },
+    {
+      "file": "docs/runs/am_initial.md",
+      "rows": null,
+      "bytes": 3715,
+      "sha256": "1f84cee2223210c0f5a98dd82ecabb997e767e863b76d65bb5b12d19c513b259",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/am_extended/formal_am_end_checks.csv",
+      "rows": 5,
+      "bytes": 1876,
+      "sha256": "00f91bcc2a166a7587be481612dc4d39e19afaf268c7c668f44ca76fcd2009fc",
+      "privacy_changes": [
+        {
+          "from": "initial_timestamp_start_utc",
+          "to": "initial_timestamp_start_elapsed_s"
+        },
+        {
+          "from": "endcheck_timestamp_start_utc",
+          "to": "endcheck_timestamp_start_elapsed_s"
+        },
+        {
+          "from": "initial_raw_waveform_filename",
+          "to": "initial_waveform_id"
+        },
+        {
+          "from": "endcheck_raw_waveform_filename",
+          "to": "endcheck_waveform_id"
+        }
+      ]
+    },
+    {
+      "file": "data/am_extended/formal_am_raw.csv",
+      "rows": 155,
+      "bytes": 146893,
+      "sha256": "5ab62675e2898bad2401783712b819dbd97dbdb8c99e3956f83deae963c7ccb0",
+      "privacy_changes": [
+        {
+          "from": "timestamp_start_utc",
+          "to": "timestamp_start_elapsed_s"
+        },
+        {
+          "from": "timestamp_end_utc",
+          "to": "timestamp_end_elapsed_s"
+        },
+        {
+          "from": "raw_waveform_filename",
+          "to": "waveform_id"
+        }
+      ]
+    },
+    {
+      "file": "data/am_extended/formal_am_summary.csv",
+      "rows": 31,
+      "bytes": 14765,
+      "sha256": "830ddab5fc212e4c4366f8f9c9c5260bd5a167976bbe097fbdb4503e82969b0c",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/am_extended/endcheck_drift.png",
+      "rows": null,
+      "bytes": 130941,
+      "sha256": "00c20279a5c21d6c5cddcba91eda103f3f9bc1894737ad9910a83e709255430f",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/am_extended/repeatability.png",
+      "rows": null,
+      "bytes": 191608,
+      "sha256": "e3bfc68ca0902d6f325a380d163857360849541047cce100e781e91d30212b7f",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/am_extended/sweep_comparison.png",
+      "rows": null,
+      "bytes": 79954,
+      "sha256": "8c981dee9e82fe99c9502cea182526daa4eaf314e5feedd00160e393061cc238",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/am_extended/T_lower_upper.png",
+      "rows": null,
+      "bytes": 120870,
+      "sha256": "4f4369ad640d7b313f854ac38ebdf93148c905807b70f6406a56d984a6e890c2",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/am_extended/T_mean.png",
+      "rows": null,
+      "bytes": 68965,
+      "sha256": "bad7f8836d16ca6a5b01e6533b7c04313a24b6b178b1acff3901e860c8946c49",
+      "privacy_changes": []
+    },
+    {
+      "file": "docs/runs/am_extended.md",
+      "rows": null,
+      "bytes": 5149,
+      "sha256": "fc183782cf40c35fddadd912613ad479366a66572adb7b71910aec3a188b5981",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/drive_support/drive_dependence_frequency_scans.csv",
+      "rows": 918,
+      "bytes": 417045,
+      "sha256": "bce207f3bc93517e966e09f61b71284a16dfdd4f51a95c575f10139fbd6acde3",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/drive_support/drive_dependence_harmonics.csv",
+      "rows": 18,
+      "bytes": 7426,
+      "sha256": "41dee05ef4221ba73e64bde1e5d6dab5b4aa8d637a4a77c192364e59664449e4",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/drive_support/drive_dependence_support.csv",
+      "rows": 18,
+      "bytes": 17446,
+      "sha256": "0d1136eb60d0a4efdf9f33a7b06d8a4446ddb30a230aba1829419f87a18fdcaf",
+      "privacy_changes": [
+        {
+          "from": "start_utc",
+          "to": "start_elapsed_s"
+        },
+        {
+          "from": "timestamp_utc",
+          "to": "timestamp_elapsed_s"
+        }
+      ]
+    },
+    {
+      "file": "docs/runs/drive_support.md",
+      "rows": null,
+      "bytes": 5437,
+      "sha256": "fa9c14d745fcfa9af0c093cb59d031f0d0a00f3a6be1f4e9010370be38991420",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/drive_support/f0_vs_current.png",
+      "rows": null,
+      "bytes": 82867,
+      "sha256": "7f1bea5cd312a8d43825d53da9ac42d246ae2fa35fed1fe3cf8cc8081abbb3e8",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/drive_support/f0_vs_drive.png",
+      "rows": null,
+      "bytes": 80330,
+      "sha256": "2e79c9c265c7c0d81b7907c59e6ddb07dc973269182b217bcc714cf430325574",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/drive_support/Hmax_vs_drive.png",
+      "rows": null,
+      "bytes": 73662,
+      "sha256": "5faee9201596be85798da83c2000aab6463713c57803787ada564bced8e8bbe3",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/drive_extreme/acquisition_audit.csv",
+      "rows": 1139,
+      "bytes": 264954,
+      "sha256": "23200f7c7babf71af3c07dd970e04459bc2bc12f6ce3efd788bb5ee612683814",
+      "privacy_changes": [
+        {
+          "from": "timestamp_utc",
+          "to": "timestamp_elapsed_s"
+        }
+      ]
+    },
+    {
+      "file": "data/drive_extreme/drive_dependence_results.csv",
+      "rows": 21,
+      "bytes": 19742,
+      "sha256": "e4ca387865edf74aa377a140f6559d062f3dcb9b311ad026c4eefba8ffcacde1",
+      "privacy_changes": [
+        {
+          "from": "start_utc",
+          "to": "start_elapsed_s"
+        },
+        {
+          "from": "timestamp_utc",
+          "to": "timestamp_elapsed_s"
+        }
+      ]
+    },
+    {
+      "file": "data/drive_extreme/frequency_response_raw.csv",
+      "rows": 1139,
+      "bytes": 806999,
+      "sha256": "b4e50a1a55dbee9a359fdd9055d9b182c949db1ede380c065a390bed34309d77",
+      "privacy_changes": [
+        {
+          "from": "captured_utc",
+          "to": "captured_elapsed_s"
+        }
+      ]
+    },
+    {
+      "file": "data/drive_extreme/harmonics.csv",
+      "rows": 21,
+      "bytes": 14235,
+      "sha256": "3745f8e99bad47eee7cc6e2769f64a83218e79ce5c3cbf7ac304dc3059ab78f8",
+      "privacy_changes": [
+        {
+          "from": "captured_utc",
+          "to": "captured_elapsed_s"
+        }
+      ]
+    },
+    {
+      "file": "docs/runs/drive_extreme.md",
+      "rows": null,
+      "bytes": 3214,
+      "sha256": "f229a4e466404a65e5bad7e1b91af4d15dd777b50b7ecde0c9de4ed31fd8e238",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/drive_extreme/bandwidth_q_vs_current.png",
+      "rows": null,
+      "bytes": 107517,
+      "sha256": "197fe6975a2e75b2db2029e7a9594a5039389aa1552571eae93f430b92f64b87",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/drive_extreme/bandwidth_q_vs_drive_amplitude.png",
+      "rows": null,
+      "bytes": 106341,
+      "sha256": "f78eef6eada6ceb971c2463c73c0ea11145fde5d87d408b23d6fcc4b2258c21b",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/drive_extreme/complex_response_plane.png",
+      "rows": null,
+      "bytes": 276914,
+      "sha256": "dfdca80901dbcd15de7cf9ab7a1fb8aa163c424838bc64090fb59adcce43cba1",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/drive_extreme/current_vs_drive.png",
+      "rows": null,
+      "bytes": 69054,
+      "sha256": "6aafdc7ea67a5f4b77195904debfbd67d2268c994ea1713b972cb5e757c580c0",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/drive_extreme/f0_vs_drive_amplitude.png",
+      "rows": null,
+      "bytes": 64422,
+      "sha256": "7a8597d5379b11b7a66e560b76cc5cb4f9f932ca9ed7b335f14c6985aa26b87d",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/drive_extreme/f0_vs_resonance_current.png",
+      "rows": null,
+      "bytes": 67991,
+      "sha256": "35959d26d350aa91e340e076ba5f146ce500771eabf3810531ee7d503b2ab169",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/drive_extreme/fit_parameters_vs_current.png",
+      "rows": null,
+      "bytes": 119947,
+      "sha256": "fa26f706aac646e9ebcff5a98e5180e953bc32007d3774a73ad9104710a09135",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/drive_extreme/fit_parameters_vs_drive_amplitude.png",
+      "rows": null,
+      "bytes": 115126,
+      "sha256": "0d713cc09b9bab07ba807714a4943e2b606fb5d99b020db3f12212e0ae0439aa",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/drive_extreme/harmonics_vs_current.png",
+      "rows": null,
+      "bytes": 144311,
+      "sha256": "8cf555e1263449337dee9839b0a8047bd7013675877325a1c3c26307df24f70a",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/drive_extreme/harmonics_vs_drive_amplitude.png",
+      "rows": null,
+      "bytes": 141479,
+      "sha256": "284dda0a0228c79646eeca815a9ed8f29097ca4fd6ecca238c9b5f84015288b1",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/drive_extreme/hmax_vs_current.png",
+      "rows": null,
+      "bytes": 64717,
+      "sha256": "1300fd8de86fbafd21dcbc28ff573f6b11417647d3f8149544c0067e6399ee13",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/drive_extreme/hmax_vs_drive_amplitude.png",
+      "rows": null,
+      "bytes": 60499,
+      "sha256": "99da2abbac1d5a7fca36d4165284f672e80cd058cbc5496a3bf90dc9214e5fb7",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/drive_extreme/resonance_response_overlays.png",
+      "rows": null,
+      "bytes": 438435,
+      "sha256": "6b971d30ea3e19653e8ea4ce7c41a1f9989861cf9d61a7543065fca196186c4b",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/drive_extreme/vin_at_resonance_vs_drive.png",
+      "rows": null,
+      "bytes": 69213,
+      "sha256": "357103855f08d85aad3bcb146752a872d44f4cae588d46a3e8463d72b8aada70",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/characterization/am_1khz_diagnostic.csv",
+      "rows": 3,
+      "bytes": 459,
+      "sha256": "efba094b17215f7861aebb5fede166e6ac783fd4e750740b0a1f17bef7adef51",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/characterization/am_1khz_diagnostic_500khz.csv",
+      "rows": 3,
+      "bytes": 465,
+      "sha256": "149f38cea51338a49546fc54e7d71daa327cd9f2371c2dc2edc5a5d7a97d9d15",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/characterization/am_1khz_low_drive.csv",
+      "rows": 3,
+      "bytes": 1144,
+      "sha256": "ad10e81cbd24616fb32b2aae37ac381e2214425207934886a48625b20211eab1",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/characterization/am_1khz_low_drive_spectrum.png",
+      "rows": null,
+      "bytes": 197778,
+      "sha256": "1aa1bdec7f57b7ddd4579a90f8d62ae84433749caacd5b08154715cd4c08b5a3",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/characterization/am_1khz_low_drive_summary.csv",
+      "rows": 1,
+      "bytes": 587,
+      "sha256": "60881fe8cbc5a1ffb1fc810f23711efd3864351f686cb6067b9ae455d47315ee",
+      "privacy_changes": []
+    },
+    {
+      "file": "docs/runs/characterization/am_1khz_low_drive_summary.md",
+      "rows": null,
+      "bytes": 2992,
+      "sha256": "2430622a305313e6017c61f8e216db7c75d1d7675367e2f8e1d0920c8db5179d",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/characterization/amplitude_comparison.csv",
+      "rows": 50,
+      "bytes": 22087,
+      "sha256": "de5b9f93e34e7a27427868487d4f48f3ada6170e1762799a9267186d6de8bb86",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/characterization/amplitude_linearity_check.csv",
+      "rows": 3,
+      "bytes": 1648,
+      "sha256": "eaed308fbb48976594dd12d930ba2db467f45de8c30d2bcae183ecf0119bd086",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/characterization/ascending_descending_comparison.png",
+      "rows": null,
+      "bytes": 227829,
+      "sha256": "fdad4ea45120d7fdef381155da547574a9b14dd9140e823f2ea3bcc2eb8f2d8d",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/characterization/bandwidth_q_vs_amplitude.png",
+      "rows": null,
+      "bytes": 107580,
+      "sha256": "b943eaf52033d306db6d138deef83c9618c182046b9f798b1c1b3f29f1423c06",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/characterization/characterization_parameters.json",
+      "rows": null,
+      "bytes": 3009,
+      "sha256": "c9abe53f033ff378a4267f999747dfd12ced6370448acd9d9e50ac5116a85a8b",
+      "privacy_changes": [
+        {
+          "field": "scope_id",
+          "action": "retain manufacturer/model only"
+        },
+        {
+          "field": "generator_id",
+          "action": "retain manufacturer/model only"
+        },
+        {
+          "field": "scan_utc",
+          "action": "retain date only"
+        }
+      ]
+    },
+    {
+      "file": "docs/runs/characterization/characterization_summary.md",
+      "rows": null,
+      "bytes": 7797,
+      "sha256": "300cce80b362344742bd376a398be45356729e15ca549e8409c90152f1bb4227",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/characterization/drive_amplitude_frequency_scan.csv",
+      "rows": 1938,
+      "bytes": 1101672,
+      "sha256": "d693bd41ca24d853fe60ad6c05af99d23b06b1632cfc697f1f1daa6e519b9e20",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/characterization/drive_amplitude_harmonics.csv",
+      "rows": 38,
+      "bytes": 20863,
+      "sha256": "f5af72e83ff4e6c476545cdac6f44d60e8b22d4a272da535a4182730ac61e78b",
+      "privacy_changes": []
+    },
+    {
+      "file": "docs/runs/characterization/drive_amplitude_summary.md",
+      "rows": null,
+      "bytes": 7013,
+      "sha256": "0575a2ca995ab5cb562c9f579253baecd53d51b36f72c51fb449a4f9394252de",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/characterization/drive_amplitude_sweep.csv",
+      "rows": 38,
+      "bytes": 44423,
+      "sha256": "510db427f947be1de4f67063915ee0f5d18ae684317b059c115b08ba45fd0f8f",
+      "privacy_changes": [
+        {
+          "from": "start_utc",
+          "to": "start_elapsed_s"
+        }
+      ]
+    },
+    {
+      "file": "figures/characterization/drive_level_comparison.png",
+      "rows": null,
+      "bytes": 107172,
+      "sha256": "91e5496f6c8c7d479a542f83ec1f0230f9caefbf052511ddb4b9d96278603a52",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/characterization/f0_vs_actual_vin.png",
+      "rows": null,
+      "bytes": 75108,
+      "sha256": "a23be9c341bb343e060dff86d4a81f8222dbad83784d728203763b774b4b24a5",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/characterization/f0_vs_programmed_vpp.png",
+      "rows": null,
+      "bytes": 71215,
+      "sha256": "4ab2c0c5baf58f45ecb705a20995708cc72b8d66eba7f43f42fc2ebfb72827af",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/characterization/f0_vs_resonance_current.png",
+      "rows": null,
+      "bytes": 72926,
+      "sha256": "a29df3d7f8f04539c0bc788c943881941f88fc2a2a4bd42725a9ca55618d64f6",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/characterization/fitted_parameters_vs_amplitude.png",
+      "rows": null,
+      "bytes": 165230,
+      "sha256": "0c5fe083985addea37c7bacf0d1873b906b46580c4b7ce40bb6f1963f53ab592",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/characterization/fitted_parameters_vs_current.png",
+      "rows": null,
+      "bytes": 166825,
+      "sha256": "cf4d36398cb36673cb7a449317282b5622ab3e18924a7c90a5e147bd3f1b672b",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/characterization/harmonics_vs_amplitude.png",
+      "rows": null,
+      "bytes": 197215,
+      "sha256": "dcf5ad21d36b50997e0996b79496c56832485ef584b1dd14d641cb73ec8ddeae",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/characterization/hmax_vs_current.png",
+      "rows": null,
+      "bytes": 78285,
+      "sha256": "d9ce9b05d6b8a1bcf4d3a299ea7130f799382a20a27b7e41868517aae80defd9",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/characterization/hmax_vs_programmed_vpp.png",
+      "rows": null,
+      "bytes": 76080,
+      "sha256": "d691b91faa760656aeb59ba549d7de05e76e50e8d54db8cc4abc4c91322659bb",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/characterization/impedance_real_imag.png",
+      "rows": null,
+      "bytes": 94027,
+      "sha256": "e509a3c45b81e0e50f3a29c3acdb1c9f256a258abc12984f6dad9c924cf32786",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/characterization/low_drive_1khz_range_ab.csv",
+      "rows": 9,
+      "bytes": 3432,
+      "sha256": "cb505ad5750a5aa269473dd977f00707fc1e0eb8ae14787a9420c253096c6b55",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/characterization/low_drive_1khz_range_ab_summary.csv",
+      "rows": 5,
+      "bytes": 2386,
+      "sha256": "b562b66ede718eb6460c366441568b375adfbeff3c01bbb56536f713dad25e1c",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/characterization/low_drive_1khz_range_bab.csv",
+      "rows": 9,
+      "bytes": 3551,
+      "sha256": "1197b810e52dfd6796ecc07c3f849924a58c008af802846c47044cd840ad60c5",
+      "privacy_changes": [
+        {
+          "from": "timestamp_utc",
+          "to": "timestamp_elapsed_s"
+        }
+      ]
+    },
+    {
+      "file": "data/characterization/low_drive_1khz_range_bab_summary.csv",
+      "rows": 5,
+      "bytes": 2372,
+      "sha256": "b50d42da7581e408253f6269ff3b080c5a17e75bc91ace6e8f5f82e5cfe22edb",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/characterization/low_drive_sideband_repeatability.png",
+      "rows": null,
+      "bytes": 156168,
+      "sha256": "5cb2915f0845256e7a13da26d0c6007b2a7819022cea844c333d17ebec787c7d",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/characterization/low_drive_snr.png",
+      "rows": null,
+      "bytes": 100444,
+      "sha256": "c25b93112f7c44ad233970c5d9828db074d9952584bfb2c6efef93cd97b4ab82",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/characterization/low_drive_snr_repeats.csv",
+      "rows": 45,
+      "bytes": 52927,
+      "sha256": "6857a970e6f5d4d3f993f401375bd89fb9db83626a41dae399dcc867b40f25fd",
+      "privacy_changes": []
+    },
+    {
+      "file": "docs/runs/characterization/low_drive_snr_summary.md",
+      "rows": null,
+      "bytes": 5368,
+      "sha256": "df0a12f91112dfc84b33f31147aa0d95c4f00594c7605eb9d7b50364618c16ae",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/characterization/low_drive_snr_sweep.csv",
+      "rows": 15,
+      "bytes": 23456,
+      "sha256": "8ee8802888ee51fde4dc7eb393775ea71614a50095ed7e413199c7a1ac937997",
+      "privacy_changes": []
+    },
+    {
+      "file": "figures/characterization/resonance_curve.png",
+      "rows": null,
+      "bytes": 138904,
+      "sha256": "aec2e40f2db8699dd1168ff9b7777fb7b65b9db9ae70ad49e2a024a3972c3f37",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/characterization/resonance_refinement.csv",
+      "rows": 41,
+      "bytes": 17941,
+      "sha256": "61ed6897ab9c391eba4f7246c6b14a54e3397ce78245cffba8c666f22a4f8524",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/characterization/resonance_scan.csv",
+      "rows": 274,
+      "bytes": 112851,
+      "sha256": "2e76b164844a3adbb89facb2838c8c9bad2c74e185b02a4b6997fc63a5d633cc",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/characterization/scope_scale_crosscheck_0p1vpp.csv",
+      "rows": 13,
+      "bytes": 6266,
+      "sha256": "d0a4a3aeb7c648ab80d690626c14d7e03103a39b1c79ad346a83041f1a964b98",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/characterization/scope_vertical_range_calibration.csv",
+      "rows": 66,
+      "bytes": 30963,
+      "sha256": "28b12c5122f1b6405b48bd25484c6782e5954a5f7cb5421c51cd811d4e3d7083",
+      "privacy_changes": []
+    },
+    {
+      "file": "data/characterization/vertical_scale_corrections.json",
+      "rows": null,
+      "bytes": 5141,
+      "sha256": "acb48e5e92f47c1afae068377a037d34b241eb9e6e6c742144d5f4c421b535de",
+      "privacy_changes": []
+    }
+  ]
+}

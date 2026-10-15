@@ -1,0 +1,26 @@
+# Private instrument setup and measurement sessions
+config.local.json
+*.local.json
+.env
+.env.*
+local_runs/
+*.npz
+scope_test.csv
+*.log
+*_log.txt
+raw/
+
+# Environments and generated analysis
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+outputs/
+.pytest_cache/
+.coverage
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

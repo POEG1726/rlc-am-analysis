@@ -1,0 +1,3 @@
+-r requirements.txt
+PyVISA==1.16.2
+# Install a compatible vendor VISA runtime separately. See docs/ACQUISITION.md.
